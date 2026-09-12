@@ -4,6 +4,8 @@
 #include <cmath>
 #include <string>
 #include <format>
+#include <chrono>
+#include <thread>
 
 using std::cout;
 using str = std::string;
@@ -13,6 +15,7 @@ static str getResult(double principal_amount, double monthly_contribution, doubl
                      int compound_per_year, double time_invested);
 
 int main() {
+    using namespace std::chrono_literals;
     double principal_amount{};
     double extra_money_per_month_invest{0.0}; // Default to 0 if 'n'
     double annual_interest_rate_raw{};
@@ -62,6 +65,15 @@ int main() {
         std::cerr << "invalid input, not a valid choice.\n";
         return 1;
     }
+
+    cout << "cooking some calculations...\n";
+    std::this_thread::sleep_for(1s);
+
+    cout << "estimating final amount...\n";
+    std::this_thread::sleep_for(1s);
+
+    cout << "getting some final stuff done...\n";
+    std::this_thread::sleep_for(1s);
 
     cout << "==== Final amount: ====\n";
     // FIX 3: Pass the monthly contribution into our updated math function
