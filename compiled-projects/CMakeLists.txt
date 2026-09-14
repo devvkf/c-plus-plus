@@ -2,5 +2,6 @@
 # add_subdirectory(chip8_emulator)
 # add_subdirectory(raytracer)
 
-add_subdirectory(compound_interest_calculator)
-add_subdirectory(simple_interest_calculator)
+# Instead of add_subdirectory:
+add_executable(compound_interest_calculator compound_interest_calculator/compound_interest_calculator.cpp)
+add_executable(simple_interest_calculator simple_interest_calculator/simple_interest_calculator.cpp)
