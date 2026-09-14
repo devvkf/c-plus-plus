@@ -21,6 +21,46 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Inspect Hardware & VM Specs (Linux/macOS)
+        if: runner.os != 'Windows'
+        run: |
+          echo "=================== CPU SPECS ==================="
+          if [ "$RUNNER_OS" = "Linux" ]; then
+            lscpu | grep -E "Model name|CPU\(s\):|Thread|Core" || cat /proc/cpuinfo | grep "model name" | head -n 1
+          elif [ "$RUNNER_OS" = "macOS" ]; then
+            sysctl -n machdep.cpu.brand_string || sysctl -n hw.model
+            echo "Logical Cores: $(sysctl -n hw.ncpu)"
+          fi
+
+          echo "=================== RAM SPECS ==================="
+          if [ "$RUNNER_OS" = "Linux" ]; then
+            free -h
+          elif [ "$RUNNER_OS" = "macOS" ]; then
+            echo "Total RAM: $(( $(sysctl -n hw.memsize) / 1024 / 1024 / 1024 )) GB"
+          fi
+
+          echo "=================== DISK SPECS ==================="
+          df -h /
+          echo "=================================================="
+
+      - name: Inspect Hardware & VM Specs (Windows)
+        if: runner.os == 'Windows'
+        shell: powershell
+        run: |
+          Write-Host "=================== CPU SPECS ==================="
+          Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors | Format-Table -AutoSize
+          
+          Write-Host "=================== RAM SPECS ==================="
+          $ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property Capacity -Sum).Sum / 1GB
+          if (-not $ram) {
+            $ram = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory / 1GB
+          }
+          Write-Host "Total RAM: $([math]::round($ram, 2)) GB"
+          
+          Write-Host "=================== DISK SPECS ==================="
+          Get-PSDrive C | Select-Object Name, @{Name="Used (GB)";Expression={[math]::round($_.Used/1GB,2)}}, @{Name="Free (GB)";Expression={[math]::round($_.Free/1GB,2)}} | Format-Table -AutoSize
+          Write-Host "=================================================="
+
       - name: Configure CMake
         run: >
           cmake -B build
