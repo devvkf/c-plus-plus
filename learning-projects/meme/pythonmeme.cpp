@@ -1,6 +1,7 @@
 // result = HelloWorld(print)
 
 #include <iostream>
+#include <string>
 
 using str = std::string;
 using std::cout;
