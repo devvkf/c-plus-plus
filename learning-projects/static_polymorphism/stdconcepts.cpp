@@ -1,17 +1,17 @@
 #include <iostream>
 #include <concepts>
+#include <cstdint>
 
-static void processNumber(std::integral auto d){
-    std::cout << "Integer: " << d << '\n';
-}
+template<typename D>
+concept bigInteger = std::integral<D> && (sizeof(D) >= 4);
 
-static void processNumber(std::floating_point auto d) {
-    std::cout << "Float: " << d << '\n';
+static void handle(bigInteger auto x) {
+    std::cout << "process: " << x << '\n';
 }
 
 int main() {
-    processNumber(3.14);
-    processNumber(-3);
+    int8_t d = 5;
+    int32_t e = 152;
 
-    return 0;
+    handle(e);
 }
