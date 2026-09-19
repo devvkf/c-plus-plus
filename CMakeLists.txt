@@ -17,4 +17,4 @@ endif()
 
 # Register your two top-level subdirectories
 add_subdirectory(learning-projects)
-add_subdirectory(compiled-projects)
+add_subdirectory(app-projects)
