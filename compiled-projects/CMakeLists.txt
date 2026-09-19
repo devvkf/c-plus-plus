@@ -16,3 +16,8 @@ add_executable(
         unit_converter
         unit_converter/unit_converter.cpp
 )
+
+add_executable(
+        fp_checker
+        fp_checker/isDouble.cpp
+)
