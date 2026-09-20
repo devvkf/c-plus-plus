@@ -13,7 +13,7 @@ static void checkValue(D value)
     cout << "Passed: " << value << '\n';
 }
 
-bool is_decimal_string(const std::string& str) {
+static bool is_decimal_string(const std::string& str) {
     return str.find('.') != std::string::npos;  // has a decimal point
 }
 
