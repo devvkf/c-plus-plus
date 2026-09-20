@@ -1,15 +1,16 @@
 #include <algorithm>
 #include <vector>
 #include <iostream>
+#include <concepts>
 
 using std::vector;
 using std::cout;
-using std::transform;
+auto& transform_r = std::ranges::transform;
 
 int main() {
     vector<double> db = {15.3, 76.4, 245.9, 956.2};
 
-    std::ranges::transform(db, db.begin(),
+    transform_r(db, db.begin(),
                            [](const double d) {
                                return 2 * d;
                            });
