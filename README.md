@@ -1,4 +1,4 @@
-# C++ by Devv
+# C++ by DevvKF
 
 ## What is this?
 - C++ programs I made in my spare time

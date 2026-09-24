@@ -16,9 +16,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2046589-d8fa-4ec7-b27e-0f7cd9a8b964" name="Changes" comment="add: alias in vector_2x.cpp">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning-projects/lambda/vector_2x.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/learning-projects/lambda/vector_2x.cpp" afterDir="false" />
+    <list default="true" id="c2046589-d8fa-4ec7-b27e-0f7cd9a8b964" name="Changes" comment="add: unique ptr">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,61 +59,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0796600392801514" />
-      <entry key="MS500" value="1.6160385039589455" />
-      <entry key="S2" value="2.6008324935533498" />
-      <entry key="S5" value="4.210793381778293" />
-      <entry key="S10" value="7.019448326818291" />
-      <entry key="S30" value="16.382874631092974" />
-      <entry key="S60" value="25.993279830513025" />
-      <entry key="M2" value="47.32299936106833" />
-      <entry key="M5" value="108.68881732303596" />
-      <entry key="M10" value="202.8273601094392" />
-      <entry key="M15" value="295.02500263644646" />
-      <entry key="M30" value="559.986651355039" />
-      <entry key="H1" value="1043.7962852492155" />
-      <entry key="H2" value="1825.5574443225833" />
-      <entry key="H4" value="2740.805253518241" />
-      <entry key="D1" value="4194.376529936497" />
-      <entry key="W1" value="4550.610508339154" />
+      <entry key="MS100" value="1.2677013107077468" />
+      <entry key="MS500" value="2.2041317689916875" />
+      <entry key="S2" value="2.750368320025091" />
+      <entry key="S5" value="2.8951416369866925" />
+      <entry key="S10" value="2.9466944110485427" />
+      <entry key="S30" value="2.9868966901460032" />
+      <entry key="S60" value="3.550335783328136" />
+      <entry key="M2" value="10.350272312219937" />
+      <entry key="M5" value="46.88908445471304" />
+      <entry key="M10" value="102.67125000746994" />
+      <entry key="M15" value="162.20461427676128" />
+      <entry key="M30" value="374.8398093761966" />
+      <entry key="H1" value="834.1709871884658" />
+      <entry key="H2" value="1637.25684872427" />
+      <entry key="H4" value="2631.7558970348095" />
+      <entry key="D1" value="4295.6162723751695" />
+      <entry key="W1" value="4715.789339505288" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.6049337153502135E-271" />
-      <entry key="MS500" value="6.93571789290815E-55" />
-      <entry key="S2" value="2.8858440284393185E-14" />
-      <entry key="S5" value="3.838036866042607E-6" />
-      <entry key="S10" value="0.001959090826389272" />
-      <entry key="S30" value="0.12512714284792098" />
-      <entry key="S60" value="0.3537823182808012" />
-      <entry key="M2" value="0.6046341534156255" />
-      <entry key="M5" value="1.0593104730825844" />
-      <entry key="M10" value="1.7247788838831868" />
-      <entry key="M15" value="2.3114701824731636" />
-      <entry key="M30" value="3.948625510084629" />
-      <entry key="H1" value="7.529986730558871" />
-      <entry key="H2" value="15.150674357453411" />
-      <entry key="H4" value="25.588935698903576" />
-      <entry key="D1" value="43.61467412011215" />
-      <entry key="W1" value="48.18273512951955" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="2.7707208738857566E-141" />
+      <entry key="S10" value="5.26376374268996E-71" />
+      <entry key="S30" value="3.747705595058622E-24" />
+      <entry key="S60" value="1.9361682450714673E-12" />
+      <entry key="M2" value="1.4144778789425134E-6" />
+      <entry key="M5" value="0.005924676745956365" />
+      <entry key="M10" value="0.12898942996680893" />
+      <entry key="M15" value="0.41030054464603366" />
+      <entry key="M30" value="1.6636150705032993" />
+      <entry key="H1" value="4.887622556008225" />
+      <entry key="H2" value="12.206290131316871" />
+      <entry key="H4" value="22.96825945210203" />
+      <entry key="D1" value="42.83629909397421" />
+      <entry key="W1" value="48.0589422552464" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.11662917547383095" />
-      <entry key="MS500" value="0.6905621558737965" />
-      <entry key="S2" value="1.8581122954642655" />
-      <entry key="S5" value="3.6558860171321386" />
-      <entry key="S10" value="6.596366309501189" />
-      <entry key="S30" value="16.245817010207155" />
-      <entry key="S60" value="26.158817090498175" />
-      <entry key="M2" value="47.77374365064849" />
-      <entry key="M5" value="109.62080536431564" />
-      <entry key="M10" value="204.4487649090333" />
-      <entry key="M15" value="297.2458735342949" />
-      <entry key="M30" value="563.8567322149198" />
-      <entry key="H1" value="1051.2508396724636" />
-      <entry key="H2" value="1840.6391774905317" />
-      <entry key="H4" value="2766.3414900129087" />
-      <entry key="D1" value="4237.977675605413" />
-      <entry key="W1" value="4598.791146513487" />
+      <entry key="MS100" value="1.2177284337834453" />
+      <entry key="MS500" value="2.1869169867335994" />
+      <entry key="S2" value="2.744977780967764" />
+      <entry key="S5" value="2.8928692629356165" />
+      <entry key="S10" value="2.9455375044751744" />
+      <entry key="S30" value="2.9864421831430352" />
+      <entry key="S60" value="3.5466095219843043" />
+      <entry key="M2" value="10.327156129970854" />
+      <entry key="M5" value="46.84141719519028" />
+      <entry key="M10" value="102.74193267151995" />
+      <entry key="M15" value="162.55656935794198" />
+      <entry key="M30" value="376.4437052977614" />
+      <entry key="H1" value="838.9946725540957" />
+      <entry key="H2" value="1649.3996506547721" />
+      <entry key="H4" value="2654.672761806541" />
+      <entry key="D1" value="4338.438585159654" />
+      <entry key="W1" value="4763.846089865794" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -150,12 +149,14 @@
     "C/C++ File.isDouble.cpp.executor": "Run",
     "C/C++ File.lambda.cpp.executor": "Run",
     "C/C++ File.namespaces.cpp.executor": "Run",
+    "C/C++ File.ptr.cpp.executor": "Run",
     "C/C++ File.pythonmeme.cpp.executor": "Run",
     "C/C++ File.simple_interest_calculator.cpp.executor": "Run",
     "C/C++ File.stdconcepts.cpp.executor": "Run",
     "C/C++ File.stopwatchByLambda.cpp (1).executor": "Run",
     "C/C++ File.stopwatchByLambda.cpp.executor": "Run",
     "C/C++ File.template.cpp.executor": "Run",
+    "C/C++ File.uniqueptr.cpp.executor": "Run",
     "C/C++ File.unit_converter.cpp.executor": "Run",
     "C/C++ File.vector.cpp.executor": "Run",
     "C/C++ File.vector_2x.cpp.executor": "Run",
@@ -188,7 +189,7 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="C/C++ File.concepts-actually.cpp">
+  <component name="RunManager" selected="C/C++ File.uniqueptr.cpp">
     <configuration name="concepts-actually.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-plus" TARGET_NAME="concepts-actually.cpp" CONFIG_NAME="concepts-actually.cpp">
       <option name="sourceFile" value="learning-projects\static_polymorphism\concepts-actually.cpp" />
       <method v="2">
@@ -201,14 +202,14 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stopwatchByLambda.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-plus" TARGET_NAME="stopwatchByLambda.cpp" CONFIG_NAME="stopwatchByLambda.cpp">
-      <option name="sourceFile" value="learning-projects\lambda\timerByLambda.cpp" />
+    <configuration name="ptr.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-plus" TARGET_NAME="ptr.cpp" CONFIG_NAME="ptr.cpp">
+      <option name="sourceFile" value="learning-projects\ptr\ptr.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stopwatchByLambda.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-plus" TARGET_NAME="stopwatchByLambda.cpp" CONFIG_NAME="stopwatchByLambda.cpp">
-      <option name="sourceFile" value="learning-projects\lambda\stopwatchByLambda.cpp" />
+    <configuration name="uniqueptr.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-plus" TARGET_NAME="uniqueptr.cpp" CONFIG_NAME="uniqueptr.cpp">
+      <option name="sourceFile" value="learning-projects\ptr\uniqueptr.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -258,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.uniqueptr.cpp" />
+        <item itemvalue="C/C++ File.ptr.cpp" />
         <item itemvalue="C/C++ File.concepts-actually.cpp" />
         <item itemvalue="C/C++ File.vector_2x.cpp" />
         <item itemvalue="C/C++ File.isDouble.cpp (1)" />
-        <item itemvalue="C/C++ File.stopwatchByLambda.cpp (1)" />
-        <item itemvalue="C/C++ File.stopwatchByLambda.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +277,7 @@
     },
     {
       "first": {
-        "##RUN_CONFIGURATION##": "C/C++ File.stopwatchByLambda.cpp (1)"
+        "##RUN_CONFIGURATION##": "C/C++ File.uniqueptr.cpp"
       },
       "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
     },
@@ -288,18 +289,18 @@
     },
     {
       "first": {
-        "##RUN_CONFIGURATION##": "C/C++ File.stopwatchByLambda.cpp"
+        "##RUN_CONFIGURATION##": "C/C++ File.concepts-actually.cpp"
       },
       "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
     },
     {
       "first": {
-        "##RUN_CONFIGURATION##": "C/C++ File.concepts-actually.cpp"
+        "##RUN_CONFIGURATION##": "C/C++ File.ptr.cpp"
       },
       "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
     }
   ],
-  "modificationCount": 61
+  "modificationCount": 63
 }]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -315,10 +316,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: add new grade_checker.cpp program" />
-    <MESSAGE value="add: add new vector program" />
-    <MESSAGE value="bugfix: fixed bug that truncated doubles in vector.cpp" />
-    <MESSAGE value="add: made a vector sort program (vector_sort.cpp)" />
     <MESSAGE value="add: meme program" />
     <MESSAGE value="add: template program" />
     <MESSAGE value="add: experiment" />
@@ -340,7 +337,11 @@
     <MESSAGE value="fix: `static` keyword in fp_checker" />
     <MESSAGE value="add: double elements in a vector" />
     <MESSAGE value="add: alias in vector_2x.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: alias in vector_2x.cpp" />
+    <MESSAGE value="add: changes" />
+    <MESSAGE value="add: .idea atp" />
+    <MESSAGE value="add: ptr app" />
+    <MESSAGE value="add: unique ptr" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: unique ptr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
