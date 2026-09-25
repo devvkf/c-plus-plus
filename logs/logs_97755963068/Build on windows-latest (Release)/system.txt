@@ -1,8 +1,0 @@
-2026-09-25T05:37:57.6490000Z Evaluating build.if
-2026-09-25T05:37:57.6490000Z Evaluating: success()
-2026-09-25T05:37:57.6490000Z Result: true
-2026-09-25T05:37:57.6490000Z Requested labels: windows-latest
-2026-09-25T05:37:57.6490000Z Job defined at: devvkf/c-plus-plus/.github/workflows/ci.yml@refs/heads/dev
-2026-09-25T05:37:57.6490000Z Waiting for a runner to pick up this job...
-2026-09-25T05:37:57.6500000Z Job is about to start running on the hosted runner: GitHub Actions 1000000710
-2026-09-25T05:37:57.6490000Z Job is waiting for a hosted runner to come online.

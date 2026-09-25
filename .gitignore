@@ -69,4 +69,4 @@ Testing/
 .cache/
 .vscode/
 learning-projects/cmake-build-debug
-.logs/
+logs/
