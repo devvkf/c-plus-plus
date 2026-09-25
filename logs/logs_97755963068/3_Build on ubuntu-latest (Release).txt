@@ -1,0 +1,344 @@
+﻿2026-09-25T05:37:59.6612077Z Current runner version: '2.337.0'
+2026-09-25T05:37:59.6648133Z ##[group]Runner Image Provisioner
+2026-09-25T05:37:59.6649385Z Hosted Compute Agent
+2026-09-25T05:37:59.6650441Z Version: 20260828.587
+2026-09-25T05:37:59.6651629Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-25T05:37:59.6652871Z Build Date: 2026-08-28T16:44:25Z
+2026-09-25T05:37:59.6654563Z Worker ID: {ccaeffc9-b0cd-43b8-9e79-e268bf90b323}
+2026-09-25T05:37:59.6655783Z Azure Region: eastus
+2026-09-25T05:37:59.6656750Z ##[endgroup]
+2026-09-25T05:37:59.6659232Z ##[group]Operating System
+2026-09-25T05:37:59.6660203Z Ubuntu
+2026-09-25T05:37:59.6661208Z 24.04.5
+2026-09-25T05:37:59.6662089Z LTS
+2026-09-25T05:37:59.6663836Z ##[endgroup]
+2026-09-25T05:37:59.6664808Z ##[group]Runner Image
+2026-09-25T05:37:59.6665834Z Image: ubuntu-24.04
+2026-09-25T05:37:59.6666857Z Version: 20260920.314.1
+2026-09-25T05:37:59.6669021Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-25T05:37:59.6671768Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+2026-09-25T05:37:59.6673794Z ##[endgroup]
+2026-09-25T05:37:59.6675850Z ##[group]GITHUB_TOKEN Permissions
+2026-09-25T05:37:59.6678970Z Contents: read
+2026-09-25T05:37:59.6679976Z Metadata: read
+2026-09-25T05:37:59.6680823Z Packages: read
+2026-09-25T05:37:59.6681862Z ##[endgroup]
+2026-09-25T05:37:59.6685150Z Secret source: Actions
+2026-09-25T05:37:59.6686833Z Cache mode: write
+2026-09-25T05:37:59.6688235Z Prepare workflow directory
+2026-09-25T05:37:59.7136200Z Prepare all required actions
+2026-09-25T05:37:59.7185452Z Getting action download info
+2026-09-25T05:37:59.8893158Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-25T05:38:00.0890012Z Complete job name: Build on ubuntu-latest (Release)
+2026-09-25T05:38:00.1796513Z ##[group]Run actions/checkout@v4
+2026-09-25T05:38:00.1797457Z with:
+2026-09-25T05:38:00.1797924Z   repository: devvkf/c-plus-plus
+2026-09-25T05:38:00.1801991Z   token: ***
+2026-09-25T05:38:00.1802440Z   ssh-strict: true
+2026-09-25T05:38:00.1802894Z   ssh-user: git
+2026-09-25T05:38:00.1803563Z   persist-credentials: true
+2026-09-25T05:38:00.1804076Z   clean: true
+2026-09-25T05:38:00.1804534Z   sparse-checkout-cone-mode: true
+2026-09-25T05:38:00.1805092Z   fetch-depth: 1
+2026-09-25T05:38:00.1805531Z   fetch-tags: false
+2026-09-25T05:38:00.1805983Z   show-progress: true
+2026-09-25T05:38:00.1806440Z   lfs: false
+2026-09-25T05:38:00.1806869Z   submodules: false
+2026-09-25T05:38:00.1807321Z   set-safe-directory: true
+2026-09-25T05:38:00.1807832Z   allow-unsafe-pr-checkout: false
+2026-09-25T05:38:00.1808620Z ##[endgroup]
+2026-09-25T05:38:00.2849004Z Syncing repository: devvkf/c-plus-plus
+2026-09-25T05:38:00.2851597Z ##[group]Getting Git version info
+2026-09-25T05:38:00.2852890Z Working directory is '/home/runner/work/c-plus-plus/c-plus-plus'
+2026-09-25T05:38:00.2854865Z [command]/usr/bin/git version
+2026-09-25T05:38:00.2916604Z git version 2.55.0
+2026-09-25T05:38:00.2946263Z ##[endgroup]
+2026-09-25T05:38:00.2965691Z Temporarily overriding HOME='/home/runner/work/_temp/b58c91cb-1576-4ff3-9799-adff54112f54' before making global git config changes
+2026-09-25T05:38:00.2971055Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-25T05:38:00.2972937Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/c-plus-plus/c-plus-plus
+2026-09-25T05:38:00.3030185Z Deleting the contents of '/home/runner/work/c-plus-plus/c-plus-plus'
+2026-09-25T05:38:00.3040877Z ##[group]Initializing the repository
+2026-09-25T05:38:00.3042464Z [command]/usr/bin/git init /home/runner/work/c-plus-plus/c-plus-plus
+2026-09-25T05:38:00.3146895Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-25T05:38:00.3148452Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-25T05:38:00.3149496Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-25T05:38:00.3150575Z hint: call:
+2026-09-25T05:38:00.3151283Z hint:
+2026-09-25T05:38:00.3151833Z hint: 	git config --global init.defaultBranch <name>
+2026-09-25T05:38:00.3152474Z hint:
+2026-09-25T05:38:00.3153069Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-25T05:38:00.3154396Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-25T05:38:00.3155168Z hint:
+2026-09-25T05:38:00.3155603Z hint: 	git branch -m <name>
+2026-09-25T05:38:00.3156101Z hint:
+2026-09-25T05:38:00.3156786Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-25T05:38:00.3162855Z Initialized empty Git repository in /home/runner/work/c-plus-plus/c-plus-plus/.git/
+2026-09-25T05:38:00.3173048Z [command]/usr/bin/git remote add origin https://github.com/devvkf/c-plus-plus
+2026-09-25T05:38:00.3227355Z ##[endgroup]
+2026-09-25T05:38:00.3228724Z ##[group]Disabling automatic garbage collection
+2026-09-25T05:38:00.3232192Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-25T05:38:00.3271710Z ##[endgroup]
+2026-09-25T05:38:00.3273039Z ##[group]Setting up auth
+2026-09-25T05:38:00.3279475Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-25T05:38:00.3313764Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-25T05:38:00.3724522Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-25T05:38:00.3768579Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-25T05:38:00.4005017Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-25T05:38:00.4041484Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-25T05:38:00.4278440Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-25T05:38:00.4325731Z ##[endgroup]
+2026-09-25T05:38:00.4326853Z ##[group]Fetching the repository
+2026-09-25T05:38:00.4336872Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b:refs/remotes/origin/dev
+2026-09-25T05:38:00.6914922Z From https://github.com/devvkf/c-plus-plus
+2026-09-25T05:38:00.6916918Z  * [new ref]         6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b -> origin/dev
+2026-09-25T05:38:00.6921725Z ##[endgroup]
+2026-09-25T05:38:00.6922915Z ##[group]Determining the checkout info
+2026-09-25T05:38:00.6926210Z ##[endgroup]
+2026-09-25T05:38:00.6935327Z [command]/usr/bin/git sparse-checkout disable
+2026-09-25T05:38:00.7009965Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-25T05:38:00.7052091Z ##[group]Checking out the ref
+2026-09-25T05:38:00.7057190Z [command]/usr/bin/git checkout --progress --force -B dev refs/remotes/origin/dev
+2026-09-25T05:38:00.7177397Z Switched to a new branch 'dev'
+2026-09-25T05:38:00.7183448Z branch 'dev' set up to track 'origin/dev'.
+2026-09-25T05:38:00.7192089Z ##[endgroup]
+2026-09-25T05:38:00.7247673Z [command]/usr/bin/git log -1 --format=%H
+2026-09-25T05:38:00.7279603Z 6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b
+2026-09-25T05:38:00.7578579Z ##[group]Run echo "=================== CPU SPECS ==================="
+2026-09-25T05:38:00.7579591Z [36;1mecho "=================== CPU SPECS ==================="[0m
+2026-09-25T05:38:00.7580350Z [36;1mif [ "$RUNNER_OS" = "Linux" ]; then[0m
+2026-09-25T05:38:00.7581351Z [36;1m  lscpu | grep -E "Model name|CPU\(s\):|Thread|Core" || cat /proc/cpuinfo | grep "model name" | head -n 1[0m
+2026-09-25T05:38:00.7582356Z [36;1melif [ "$RUNNER_OS" = "macOS" ]; then[0m
+2026-09-25T05:38:00.7583140Z [36;1m  sysctl -n machdep.cpu.brand_string || sysctl -n hw.model[0m
+2026-09-25T05:38:00.7584481Z [36;1m  echo "Logical Cores: $(sysctl -n hw.ncpu)"[0m
+2026-09-25T05:38:00.7585127Z [36;1mfi[0m
+2026-09-25T05:38:00.7585575Z [36;1m[0m
+2026-09-25T05:38:00.7586114Z [36;1mecho "=================== RAM SPECS ==================="[0m
+2026-09-25T05:38:00.7586834Z [36;1mif [ "$RUNNER_OS" = "Linux" ]; then[0m
+2026-09-25T05:38:00.7587442Z [36;1m  free -h[0m
+2026-09-25T05:38:00.7588035Z [36;1melif [ "$RUNNER_OS" = "macOS" ]; then[0m
+2026-09-25T05:38:00.7588844Z [36;1m  echo "Total RAM: $(( $(sysctl -n hw.memsize) / 1024 / 1024 / 1024 )) GB"[0m
+2026-09-25T05:38:00.7589616Z [36;1mfi[0m
+2026-09-25T05:38:00.7590115Z [36;1m[0m
+2026-09-25T05:38:00.7590686Z [36;1mecho "=================== DISK SPECS ==================="[0m
+2026-09-25T05:38:00.7591375Z [36;1mdf -h /[0m
+2026-09-25T05:38:00.7591940Z [36;1mecho "=================================================="[0m
+2026-09-25T05:38:00.7867445Z shell: /usr/bin/bash -e {0}
+2026-09-25T05:38:00.7868137Z ##[endgroup]
+2026-09-25T05:38:00.7989507Z =================== CPU SPECS ===================
+2026-09-25T05:38:00.8032194Z CPU(s):                                  4
+2026-09-25T05:38:00.8034162Z Model name:                              AMD EPYC 7763 64-Core Processor
+2026-09-25T05:38:00.8035134Z Thread(s) per core:                      2
+2026-09-25T05:38:00.8036546Z Core(s) per socket:                      2
+2026-09-25T05:38:00.8037692Z NUMA node0 CPU(s):                       0-3
+2026-09-25T05:38:00.8038911Z =================== RAM SPECS ===================
+2026-09-25T05:38:00.8053962Z                total        used        free      shared  buff/cache   available
+2026-09-25T05:38:00.8055402Z Mem:            15Gi       1.4Gi        12Gi        40Mi       2.4Gi        14Gi
+2026-09-25T05:38:00.8056594Z Swap:          3.0Gi          0B       3.0Gi
+2026-09-25T05:38:00.8057293Z =================== DISK SPECS ===================
+2026-09-25T05:38:00.8076463Z Filesystem      Size  Used Avail Use% Mounted on
+2026-09-25T05:38:00.8077872Z /dev/root       145G   59G   87G  41% /
+2026-09-25T05:38:00.8079112Z ==================================================
+2026-09-25T05:38:00.8178032Z ##[group]Run cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+2026-09-25T05:38:00.8178995Z [36;1mcmake -B build -S . -DCMAKE_BUILD_TYPE=Release[0m
+2026-09-25T05:38:00.8247137Z shell: /usr/bin/bash -e {0}
+2026-09-25T05:38:00.8247829Z ##[endgroup]
+2026-09-25T05:38:02.5584408Z -- The CXX compiler identification is GNU 13.3.0
+2026-09-25T05:38:02.6618831Z -- Detecting CXX compiler ABI info
+2026-09-25T05:38:02.9344745Z -- Detecting CXX compiler ABI info - done
+2026-09-25T05:38:02.9531818Z -- Check for working CXX compiler: /usr/bin/c++ - skipped
+2026-09-25T05:38:02.9578730Z -- Detecting CXX compile features
+2026-09-25T05:38:02.9627243Z -- Detecting CXX compile features - done
+2026-09-25T05:38:02.9929777Z -- Configuring done (1.7s)
+2026-09-25T05:38:02.9968777Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:02.9969907Z   Target "chrono_timer" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:02.9970873Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:02.9971490Z   flags to enable it.
+2026-09-25T05:38:02.9971654Z 
+2026-09-25T05:38:02.9971663Z 
+2026-09-25T05:38:02.9985232Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:02.9986108Z   Target "lambda_lambda" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:02.9987072Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:02.9987806Z   flags to enable it.
+2026-09-25T05:38:02.9988060Z 
+2026-09-25T05:38:02.9988072Z 
+2026-09-25T05:38:02.9999542Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0000370Z   Target "lambda_vector_2x" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0001298Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0002416Z   flags to enable it.
+2026-09-25T05:38:03.0002660Z 
+2026-09-25T05:38:03.0002671Z 
+2026-09-25T05:38:03.0012976Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0014154Z   Target "meme_error" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0015023Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0015729Z   flags to enable it.
+2026-09-25T05:38:03.0016032Z 
+2026-09-25T05:38:03.0016068Z 
+2026-09-25T05:38:03.0027119Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0027963Z   Target "meme_experiment" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0028889Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0029576Z   flags to enable it.
+2026-09-25T05:38:03.0029818Z 
+2026-09-25T05:38:03.0029838Z 
+2026-09-25T05:38:03.0040206Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0041028Z   Target "meme_pythonmeme" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0042002Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0042773Z   flags to enable it.
+2026-09-25T05:38:03.0043021Z 
+2026-09-25T05:38:03.0043032Z 
+2026-09-25T05:38:03.0053396Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0054466Z   Target "namespaces_namespaces" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:03.0055409Z   the current compiler "GNU" does not support this, or CMake does not know
+2026-09-25T05:38:03.0056098Z   the flags to enable it.
+2026-09-25T05:38:03.0056357Z 
+2026-09-25T05:38:03.0056372Z 
+2026-09-25T05:38:03.0067159Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0067996Z   Target "namespaces_unit_converter" requires the language dialect "CXX26" .
+2026-09-25T05:38:03.0068910Z   But the current compiler "GNU" does not support this, or CMake does not
+2026-09-25T05:38:03.0069607Z   know the flags to enable it.
+2026-09-25T05:38:03.0069928Z 
+2026-09-25T05:38:03.0069941Z 
+2026-09-25T05:38:03.0080549Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0081682Z   Target "ptr_ptr" requires the language dialect "CXX26" .  But the current
+2026-09-25T05:38:03.0082611Z   compiler "GNU" does not support this, or CMake does not know the flags to
+2026-09-25T05:38:03.0083536Z   enable it.
+2026-09-25T05:38:03.0083745Z 
+2026-09-25T05:38:03.0083757Z 
+2026-09-25T05:38:03.0094070Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0094878Z   Target "ptr_shared_ptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0095770Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0096452Z   flags to enable it.
+2026-09-25T05:38:03.0096708Z 
+2026-09-25T05:38:03.0096719Z 
+2026-09-25T05:38:03.0107618Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0108432Z   Target "ptr_uniqueptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0109352Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0110048Z   flags to enable it.
+2026-09-25T05:38:03.0208604Z 
+2026-09-25T05:38:03.0208697Z 
+2026-09-25T05:38:03.0209419Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0211098Z   Target "static_polymorphism_concept" requires the language dialect "CXX26"
+2026-09-25T05:38:03.0212635Z   .  But the current compiler "GNU" does not support this, or CMake does not
+2026-09-25T05:38:03.0214004Z   know the flags to enable it.
+2026-09-25T05:38:03.0214706Z 
+2026-09-25T05:38:03.0214943Z 
+2026-09-25T05:38:03.0215366Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0216169Z   Target "static_polymorphism_concepts-actually" requires the language
+2026-09-25T05:38:03.0217140Z   dialect "CXX26" .  But the current compiler "GNU" does not support this, or
+2026-09-25T05:38:03.0217918Z   CMake does not know the flags to enable it.
+2026-09-25T05:38:03.0218338Z 
+2026-09-25T05:38:03.0218627Z 
+2026-09-25T05:38:03.0218906Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0219744Z   Target "static_polymorphism_conceptuamaybe" requires the language dialect
+2026-09-25T05:38:03.0220680Z   "CXX26" .  But the current compiler "GNU" does not support this, or CMake
+2026-09-25T05:38:03.0221411Z   does not know the flags to enable it.
+2026-09-25T05:38:03.0221768Z 
+2026-09-25T05:38:03.0221781Z 
+2026-09-25T05:38:03.0222019Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0222795Z   Target "static_polymorphism_conceptuaprobably" requires the language
+2026-09-25T05:38:03.0224019Z   dialect "CXX26" .  But the current compiler "GNU" does not support this, or
+2026-09-25T05:38:03.0224782Z   CMake does not know the flags to enable it.
+2026-09-25T05:38:03.0225184Z 
+2026-09-25T05:38:03.0225198Z 
+2026-09-25T05:38:03.0225439Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0226366Z   Target "static_polymorphism_isDouble" requires the language dialect "CXX26"
+2026-09-25T05:38:03.0227416Z   .  But the current compiler "GNU" does not support this, or CMake does not
+2026-09-25T05:38:03.0228151Z   know the flags to enable it.
+2026-09-25T05:38:03.0228473Z 
+2026-09-25T05:38:03.0228487Z 
+2026-09-25T05:38:03.0228742Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0229522Z   Target "static_polymorphism_stdconcepts" requires the language dialect
+2026-09-25T05:38:03.0230422Z   "CXX26" .  But the current compiler "GNU" does not support this, or CMake
+2026-09-25T05:38:03.0231143Z   does not know the flags to enable it.
+2026-09-25T05:38:03.0231489Z 
+2026-09-25T05:38:03.0231500Z 
+2026-09-25T05:38:03.0231766Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0232520Z   Target "templates_template" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:03.0233763Z   the current compiler "GNU" does not support this, or CMake does not know
+2026-09-25T05:38:03.0234501Z   the flags to enable it.
+2026-09-25T05:38:03.0234767Z 
+2026-09-25T05:38:03.0234799Z 
+2026-09-25T05:38:03.0238658Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0239828Z   Target "ternary_operator_grade_checker" requires the language dialect
+2026-09-25T05:38:03.0240775Z   "CXX26" .  But the current compiler "GNU" does not support this, or CMake
+2026-09-25T05:38:03.0241518Z   does not know the flags to enable it.
+2026-09-25T05:38:03.0241858Z 
+2026-09-25T05:38:03.0241869Z 
+2026-09-25T05:38:03.0252138Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0252988Z   Target "variables_and_datatypes_circle_perimeter_finder" requires the
+2026-09-25T05:38:03.0254173Z   language dialect "CXX26" .  But the current compiler "GNU" does not support
+2026-09-25T05:38:03.0255006Z   this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:03.0255421Z 
+2026-09-25T05:38:03.0255434Z 
+2026-09-25T05:38:03.0266687Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0267571Z   Target "variables_and_datatypes_compound_interest_calculator" requires the
+2026-09-25T05:38:03.0268589Z   language dialect "CXX26" .  But the current compiler "GNU" does not support
+2026-09-25T05:38:03.0269431Z   this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:03.0269829Z 
+2026-09-25T05:38:03.0269842Z 
+2026-09-25T05:38:03.0280615Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0281467Z   Target "variables_and_datatypes_name_asker" requires the language dialect
+2026-09-25T05:38:03.0282399Z   "CXX26" .  But the current compiler "GNU" does not support this, or CMake
+2026-09-25T05:38:03.0283136Z   does not know the flags to enable it.
+2026-09-25T05:38:03.0283718Z 
+2026-09-25T05:38:03.0283733Z 
+2026-09-25T05:38:03.0294127Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0294992Z   Target "variables_and_datatypes_simple_interest_calculator" requires the
+2026-09-25T05:38:03.0295951Z   language dialect "CXX26" .  But the current compiler "GNU" does not support
+2026-09-25T05:38:03.0296774Z   this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:03.0297429Z 
+2026-09-25T05:38:03.0297443Z 
+2026-09-25T05:38:03.0307829Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0308677Z   Target "vector_vector" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0309617Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0310334Z   flags to enable it.
+2026-09-25T05:38:03.0310586Z 
+2026-09-25T05:38:03.0310597Z 
+2026-09-25T05:38:03.0321582Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0322428Z   Target "vector_vector_sort" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:03.0323599Z   the current compiler "GNU" does not support this, or CMake does not know
+2026-09-25T05:38:03.0324337Z   the flags to enable it.
+2026-09-25T05:38:03.0324607Z 
+2026-09-25T05:38:03.0324618Z 
+2026-09-25T05:38:03.0347990Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0348863Z   Target "compound_interest_calculator" requires the language dialect "CXX26"
+2026-09-25T05:38:03.0349858Z   .  But the current compiler "GNU" does not support this, or CMake does not
+2026-09-25T05:38:03.0350611Z   know the flags to enable it.
+2026-09-25T05:38:03.0350903Z 
+2026-09-25T05:38:03.0350915Z 
+2026-09-25T05:38:03.0361517Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0362369Z   Target "simple_interest_calculator" requires the language dialect "CXX26" .
+2026-09-25T05:38:03.0363561Z   But the current compiler "GNU" does not support this, or CMake does not
+2026-09-25T05:38:03.0364299Z   know the flags to enable it.
+2026-09-25T05:38:03.0364598Z 
+2026-09-25T05:38:03.0364610Z 
+2026-09-25T05:38:03.0375238Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0376077Z   Target "unit_converter" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0377017Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0377730Z   flags to enable it.
+2026-09-25T05:38:03.0377991Z 
+2026-09-25T05:38:03.0378007Z 
+2026-09-25T05:38:03.0388604Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:03.0389644Z   Target "fp_checker" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:03.0390572Z   current compiler "GNU" does not support this, or CMake does not know the
+2026-09-25T05:38:03.0391280Z   flags to enable it.
+2026-09-25T05:38:03.0391525Z 
+2026-09-25T05:38:03.0391536Z 
+2026-09-25T05:38:03.0437915Z CMake Generate step failed.  Build files cannot be regenerated correctly.
+2026-09-25T05:38:03.0438567Z -- Generating done (0.1s)
+2026-09-25T05:38:03.0528440Z ##[error]Process completed with exit code 1.
+2026-09-25T05:38:03.0689290Z Post job cleanup.
+2026-09-25T05:38:03.1613561Z [command]/usr/bin/git version
+2026-09-25T05:38:03.1660771Z git version 2.55.0
+2026-09-25T05:38:03.1700919Z Temporarily overriding HOME='/home/runner/work/_temp/8df83eea-65f7-4760-a27a-ff11e244c3e6' before making global git config changes
+2026-09-25T05:38:03.1702321Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-25T05:38:03.1708145Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/c-plus-plus/c-plus-plus
+2026-09-25T05:38:03.1751631Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-25T05:38:03.1791681Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-25T05:38:03.2050466Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-25T05:38:03.2080818Z http.https://github.com/.extraheader
+2026-09-25T05:38:03.2092526Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-25T05:38:03.2146999Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-25T05:38:03.2413414Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-25T05:38:03.2494120Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-25T05:38:03.2897997Z Cleaning up orphan processes
+2026-09-25T05:38:03.3199512Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

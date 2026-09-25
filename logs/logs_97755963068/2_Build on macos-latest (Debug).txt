@@ -1,0 +1,178 @@
+﻿2026-09-25T05:38:09.1577870Z Current runner version: '2.337.0'
+2026-09-25T05:38:09.1605480Z ##[group]Runner Image Provisioner
+2026-09-25T05:38:09.1606100Z Hosted Compute Agent
+2026-09-25T05:38:09.1606490Z Version: 20260828.587
+2026-09-25T05:38:09.1606930Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-25T05:38:09.1607470Z Build Date: 2026-08-28T16:44:25Z
+2026-09-25T05:38:09.1607910Z Worker ID: {982d3b16-3716-4cc5-be33-e131a1941b00}
+2026-09-25T05:38:09.1608370Z Azure Region: westus
+2026-09-25T05:38:09.1608750Z ##[endgroup]
+2026-09-25T05:38:09.1609810Z ##[group]Operating System
+2026-09-25T05:38:09.1610250Z macOS
+2026-09-25T05:38:09.1610580Z 26.6.2
+2026-09-25T05:38:09.1610910Z 25G83
+2026-09-25T05:38:09.1611300Z ##[endgroup]
+2026-09-25T05:38:09.1611670Z ##[group]Runner Image
+2026-09-25T05:38:09.1612060Z Image: macos-26-arm64
+2026-09-25T05:38:09.1612430Z Version: 20260907.0351.1
+2026-09-25T05:38:09.1613380Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20260907.0351/images/macos/macos-26-arm64-Readme.md
+2026-09-25T05:38:09.1614460Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20260907.0351
+2026-09-25T05:38:09.1615390Z ##[endgroup]
+2026-09-25T05:38:09.1616300Z ##[group]GITHUB_TOKEN Permissions
+2026-09-25T05:38:09.1618150Z Contents: read
+2026-09-25T05:38:09.1618550Z Metadata: read
+2026-09-25T05:38:09.1622720Z Packages: read
+2026-09-25T05:38:09.1624070Z ##[endgroup]
+2026-09-25T05:38:09.1630100Z Secret source: Actions
+2026-09-25T05:38:09.1631860Z Cache mode: write
+2026-09-25T05:38:09.1633080Z Prepare workflow directory
+2026-09-25T05:38:09.2168240Z Prepare all required actions
+2026-09-25T05:38:09.2276550Z Getting action download info
+2026-09-25T05:38:09.6846930Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-25T05:38:10.1736990Z Complete job name: Build on macos-latest (Debug)
+2026-09-25T05:38:10.2573050Z ##[group]Run actions/checkout@v4
+2026-09-25T05:38:10.2575690Z with:
+2026-09-25T05:38:10.2576630Z   repository: devvkf/c-plus-plus
+2026-09-25T05:38:10.2585080Z   token: ***
+2026-09-25T05:38:10.2586220Z   ssh-strict: true
+2026-09-25T05:38:10.2587200Z   ssh-user: git
+2026-09-25T05:38:10.2588150Z   persist-credentials: true
+2026-09-25T05:38:10.2589160Z   clean: true
+2026-09-25T05:38:10.2590090Z   sparse-checkout-cone-mode: true
+2026-09-25T05:38:10.2591170Z   fetch-depth: 1
+2026-09-25T05:38:10.2592060Z   fetch-tags: false
+2026-09-25T05:38:10.2592980Z   show-progress: true
+2026-09-25T05:38:10.2593920Z   lfs: false
+2026-09-25T05:38:10.2594790Z   submodules: false
+2026-09-25T05:38:10.2595700Z   set-safe-directory: true
+2026-09-25T05:38:10.2596740Z   allow-unsafe-pr-checkout: false
+2026-09-25T05:38:10.2599990Z ##[endgroup]
+2026-09-25T05:38:11.0100690Z Syncing repository: devvkf/c-plus-plus
+2026-09-25T05:38:11.0106460Z ##[group]Getting Git version info
+2026-09-25T05:38:11.0108820Z Working directory is '/Users/runner/work/c-plus-plus/c-plus-plus'
+2026-09-25T05:38:11.0112240Z [command]/opt/homebrew/bin/git version
+2026-09-25T05:38:11.0764190Z git version 2.55.0
+2026-09-25T05:38:11.0804990Z ##[endgroup]
+2026-09-25T05:38:11.0828010Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/cbd466ad-3659-44e8-9bcd-af0c78b52b20/.gitconfig'
+2026-09-25T05:38:11.0838600Z Temporarily overriding HOME='/Users/runner/work/_temp/cbd466ad-3659-44e8-9bcd-af0c78b52b20' before making global git config changes
+2026-09-25T05:38:11.0840710Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-25T05:38:11.0854640Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/c-plus-plus/c-plus-plus
+2026-09-25T05:38:11.1055300Z Deleting the contents of '/Users/runner/work/c-plus-plus/c-plus-plus'
+2026-09-25T05:38:11.1065890Z ##[group]Initializing the repository
+2026-09-25T05:38:11.1074270Z [command]/opt/homebrew/bin/git init /Users/runner/work/c-plus-plus/c-plus-plus
+2026-09-25T05:38:11.1527920Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-25T05:38:11.1532140Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-25T05:38:11.1534530Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-25T05:38:11.1537990Z hint: call:
+2026-09-25T05:38:11.1543870Z hint:
+2026-09-25T05:38:11.1545220Z hint: 	git config --global init.defaultBranch <name>
+2026-09-25T05:38:11.1547920Z hint:
+2026-09-25T05:38:11.1549230Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-25T05:38:11.1554020Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-25T05:38:11.1558540Z hint:
+2026-09-25T05:38:11.1559660Z hint: 	git branch -m <name>
+2026-09-25T05:38:11.1560680Z hint:
+2026-09-25T05:38:11.1564060Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-25T05:38:11.1566880Z Initialized empty Git repository in /Users/runner/work/c-plus-plus/c-plus-plus/.git/
+2026-09-25T05:38:11.1572210Z [command]/opt/homebrew/bin/git remote add origin https://github.com/devvkf/c-plus-plus
+2026-09-25T05:38:11.1774090Z ##[endgroup]
+2026-09-25T05:38:11.1778730Z ##[group]Disabling automatic garbage collection
+2026-09-25T05:38:11.1782200Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-09-25T05:38:11.1918620Z ##[endgroup]
+2026-09-25T05:38:11.1924190Z ##[group]Setting up auth
+2026-09-25T05:38:11.1929260Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-25T05:38:11.2072130Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-25T05:38:11.3971660Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-25T05:38:11.4209710Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-25T05:38:11.5640740Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-25T05:38:11.5736030Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-25T05:38:11.7185290Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-25T05:38:11.7285780Z ##[endgroup]
+2026-09-25T05:38:11.7288410Z ##[group]Fetching the repository
+2026-09-25T05:38:11.7302840Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b:refs/remotes/origin/dev
+2026-09-25T05:38:12.3402420Z From https://github.com/devvkf/c-plus-plus
+2026-09-25T05:38:12.3404050Z  * [new ref]         6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b -> origin/dev
+2026-09-25T05:38:12.3406540Z ##[endgroup]
+2026-09-25T05:38:12.3407390Z ##[group]Determining the checkout info
+2026-09-25T05:38:12.3411880Z ##[endgroup]
+2026-09-25T05:38:12.3413470Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-09-25T05:38:12.3526480Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-25T05:38:12.3643020Z ##[group]Checking out the ref
+2026-09-25T05:38:12.3645020Z [command]/opt/homebrew/bin/git checkout --progress --force -B dev refs/remotes/origin/dev
+2026-09-25T05:38:12.3970490Z Switched to a new branch 'dev'
+2026-09-25T05:38:12.4023300Z branch 'dev' set up to track 'origin/dev'.
+2026-09-25T05:38:12.4031250Z ##[endgroup]
+2026-09-25T05:38:12.4211920Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-09-25T05:38:12.4326360Z 6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b
+2026-09-25T05:38:12.4703110Z ##[group]Run echo "=================== CPU SPECS ==================="
+2026-09-25T05:38:12.4703770Z [36;1mecho "=================== CPU SPECS ==================="[0m
+2026-09-25T05:38:12.4704680Z [36;1mif [ "$RUNNER_OS" = "Linux" ]; then[0m
+2026-09-25T05:38:12.4705380Z [36;1m  lscpu | grep -E "Model name|CPU\(s\):|Thread|Core" || cat /proc/cpuinfo | grep "model name" | head -n 1[0m
+2026-09-25T05:38:12.4706020Z [36;1melif [ "$RUNNER_OS" = "macOS" ]; then[0m
+2026-09-25T05:38:12.4706490Z [36;1m  sysctl -n machdep.cpu.brand_string || sysctl -n hw.model[0m
+2026-09-25T05:38:12.4706970Z [36;1m  echo "Logical Cores: $(sysctl -n hw.ncpu)"[0m
+2026-09-25T05:38:12.4707310Z [36;1mfi[0m
+2026-09-25T05:38:12.4707560Z [36;1m[0m
+2026-09-25T05:38:12.4707860Z [36;1mecho "=================== RAM SPECS ==================="[0m
+2026-09-25T05:38:12.4708210Z [36;1mif [ "$RUNNER_OS" = "Linux" ]; then[0m
+2026-09-25T05:38:12.4708500Z [36;1m  free -h[0m
+2026-09-25T05:38:12.4708810Z [36;1melif [ "$RUNNER_OS" = "macOS" ]; then[0m
+2026-09-25T05:38:12.4709210Z [36;1m  echo "Total RAM: $(( $(sysctl -n hw.memsize) / 1024 / 1024 / 1024 )) GB"[0m
+2026-09-25T05:38:12.4709670Z [36;1mfi[0m
+2026-09-25T05:38:12.4709920Z [36;1m[0m
+2026-09-25T05:38:12.4710330Z [36;1mecho "=================== DISK SPECS ==================="[0m
+2026-09-25T05:38:12.4710670Z [36;1mdf -h /[0m
+2026-09-25T05:38:12.4711000Z [36;1mecho "=================================================="[0m
+2026-09-25T05:38:12.4796200Z shell: /bin/bash -e {0}
+2026-09-25T05:38:12.4796880Z ##[endgroup]
+2026-09-25T05:38:12.5999710Z =================== CPU SPECS ===================
+2026-09-25T05:38:12.6074900Z Apple M1 (Virtual)
+2026-09-25T05:38:12.6137290Z Logical Cores: 3
+2026-09-25T05:38:12.6138520Z =================== RAM SPECS ===================
+2026-09-25T05:38:12.6199180Z Total RAM: 7 GB
+2026-09-25T05:38:12.6200630Z =================== DISK SPECS ===================
+2026-09-25T05:38:12.6328580Z Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+2026-09-25T05:38:12.6330840Z /dev/disk2s1s1   320Gi    12Gi    96Gi    11%    459k  1.0G    0%   /
+2026-09-25T05:38:12.6333930Z ==================================================
+2026-09-25T05:38:12.6406310Z ##[group]Run cmake -B build -S . -DCMAKE_BUILD_TYPE=Debug
+2026-09-25T05:38:12.6406790Z [36;1mcmake -B build -S . -DCMAKE_BUILD_TYPE=Debug[0m
+2026-09-25T05:38:12.6456030Z shell: /bin/bash -e {0}
+2026-09-25T05:38:12.6456360Z ##[endgroup]
+2026-09-25T05:38:15.9515260Z -- The CXX compiler identification is AppleClang 21.0.0.21000101
+2026-09-25T05:38:17.2752110Z -- Detecting CXX compiler ABI info
+2026-09-25T05:38:18.7918120Z -- Detecting CXX compiler ABI info - done
+2026-09-25T05:38:18.8297960Z -- Check for working CXX compiler: /usr/bin/c++ - skipped
+2026-09-25T05:38:18.8304360Z -- Detecting CXX compile features
+2026-09-25T05:38:18.8320370Z -- Detecting CXX compile features - done
+2026-09-25T05:38:18.8491980Z -- Configuring done (6.1s)
+2026-09-25T05:38:18.9584630Z -- Generating done (0.1s)
+2026-09-25T05:38:18.9598550Z -- Build files have been written to: /Users/runner/work/c-plus-plus/c-plus-plus/build
+2026-09-25T05:38:18.9788820Z ##[group]Run cmake --build build --config Debug
+2026-09-25T05:38:18.9789860Z [36;1mcmake --build build --config Debug[0m
+2026-09-25T05:38:18.9837960Z shell: /bin/bash -e {0}
+2026-09-25T05:38:18.9838910Z ##[endgroup]
+2026-09-25T05:38:19.1889450Z [  1%] Building CXX object learning-projects/CMakeFiles/chrono_timer.dir/chrono/timer.cpp.o
+2026-09-25T05:38:21.4491560Z [  3%] Linking CXX executable chrono_timer
+2026-09-25T05:38:21.5460130Z ld: library 'stdc++exp' not found
+2026-09-25T05:38:21.5506760Z clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+2026-09-25T05:38:21.5528170Z make[2]: *** [learning-projects/chrono_timer] Error 1
+2026-09-25T05:38:21.5530880Z make[1]: *** [learning-projects/CMakeFiles/chrono_timer.dir/all] Error 2
+2026-09-25T05:38:21.5537270Z make: *** [all] Error 2
+2026-09-25T05:38:21.5574750Z ##[error]Process completed with exit code 2.
+2026-09-25T05:38:21.5821530Z Post job cleanup.
+2026-09-25T05:38:21.7981760Z [command]/opt/homebrew/bin/git version
+2026-09-25T05:38:21.8165720Z git version 2.55.0
+2026-09-25T05:38:21.8192100Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/ac8935dc-1ad5-4b9f-8aaa-0f7497a2c9c4/.gitconfig'
+2026-09-25T05:38:21.8213430Z Temporarily overriding HOME='/Users/runner/work/_temp/ac8935dc-1ad5-4b9f-8aaa-0f7497a2c9c4' before making global git config changes
+2026-09-25T05:38:21.8218550Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-25T05:38:21.8222330Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/c-plus-plus/c-plus-plus
+2026-09-25T05:38:21.8343130Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-25T05:38:21.8438070Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-25T05:38:21.9936510Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-25T05:38:22.0067650Z http.https://github.com/.extraheader
+2026-09-25T05:38:22.0081130Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-25T05:38:22.0170700Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-25T05:38:22.1994240Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-25T05:38:22.2098360Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-25T05:38:22.3738210Z Cleaning up orphan processes
+2026-09-25T05:38:22.3883410Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

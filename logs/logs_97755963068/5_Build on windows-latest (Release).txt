@@ -1,0 +1,859 @@
+﻿2026-09-25T05:38:02.7717929Z Current runner version: '2.337.0'
+2026-09-25T05:38:02.7750557Z ##[group]Runner Image Provisioner
+2026-09-25T05:38:02.7751487Z Hosted Compute Agent
+2026-09-25T05:38:02.7752085Z Version: 20260828.587
+2026-09-25T05:38:02.7752633Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-25T05:38:02.7753280Z Build Date: 2026-08-28T16:44:25Z
+2026-09-25T05:38:02.7753993Z Worker ID: {53c78fc1-2046-41b2-b6c1-b01a6bb5bcf2}
+2026-09-25T05:38:02.7754661Z Azure Region: westus2
+2026-09-25T05:38:02.7755186Z ##[endgroup]
+2026-09-25T05:38:02.7756577Z ##[group]Operating System
+2026-09-25T05:38:02.7757188Z Microsoft Windows Server 2025
+2026-09-25T05:38:02.7757768Z 10.0.26100
+2026-09-25T05:38:02.7758288Z Datacenter
+2026-09-25T05:38:02.7758774Z ##[endgroup]
+2026-09-25T05:38:02.7759291Z ##[group]Runner Image
+2026-09-25T05:38:02.7759797Z Image: windows-2025-vs2026
+2026-09-25T05:38:02.7760405Z Version: 20260922.246.2
+2026-09-25T05:38:02.7762167Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260922.246/images/windows/Windows2025-VS2026-Readme.md
+2026-09-25T05:38:02.7764089Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260922.246
+2026-09-25T05:38:02.7765033Z ##[endgroup]
+2026-09-25T05:38:02.7766236Z ##[group]GITHUB_TOKEN Permissions
+2026-09-25T05:38:02.7768342Z Contents: read
+2026-09-25T05:38:02.7768870Z Metadata: read
+2026-09-25T05:38:02.7769317Z Packages: read
+2026-09-25T05:38:02.7769810Z ##[endgroup]
+2026-09-25T05:38:02.7772198Z Secret source: Actions
+2026-09-25T05:38:02.7773031Z Cache mode: write
+2026-09-25T05:38:02.7773702Z Prepare workflow directory
+2026-09-25T05:38:02.8039009Z Prepare all required actions
+2026-09-25T05:38:02.8074299Z Getting action download info
+2026-09-25T05:38:03.1016205Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-25T05:38:03.4870879Z Complete job name: Build on windows-latest (Release)
+2026-09-25T05:38:03.5976796Z ##[group]Run actions/checkout@v4
+2026-09-25T05:38:03.5977677Z with:
+2026-09-25T05:38:03.5977948Z   repository: devvkf/c-plus-plus
+2026-09-25T05:38:03.5980142Z   token: ***
+2026-09-25T05:38:03.5980390Z   ssh-strict: true
+2026-09-25T05:38:03.5980644Z   ssh-user: git
+2026-09-25T05:38:03.5980901Z   persist-credentials: true
+2026-09-25T05:38:03.5981181Z   clean: true
+2026-09-25T05:38:03.5981442Z   sparse-checkout-cone-mode: true
+2026-09-25T05:38:03.5981740Z   fetch-depth: 1
+2026-09-25T05:38:03.5981985Z   fetch-tags: false
+2026-09-25T05:38:03.5982236Z   show-progress: true
+2026-09-25T05:38:03.5982489Z   lfs: false
+2026-09-25T05:38:03.5982723Z   submodules: false
+2026-09-25T05:38:03.5982980Z   set-safe-directory: true
+2026-09-25T05:38:03.5983275Z   allow-unsafe-pr-checkout: false
+2026-09-25T05:38:03.5983682Z ##[endgroup]
+2026-09-25T05:38:03.7097269Z Syncing repository: devvkf/c-plus-plus
+2026-09-25T05:38:03.7098657Z ##[group]Getting Git version info
+2026-09-25T05:38:03.7099177Z Working directory is 'D:\a\c-plus-plus\c-plus-plus'
+2026-09-25T05:38:03.7631542Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-09-25T05:38:05.2972631Z git version 2.55.0.windows.5
+2026-09-25T05:38:05.3011044Z ##[endgroup]
+2026-09-25T05:38:05.3026408Z Temporarily overriding HOME='D:\a\_temp\baaee954-590f-410a-ab23-a5543f5ba3bd' before making global git config changes
+2026-09-25T05:38:05.3028103Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-25T05:38:05.3033948Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\c-plus-plus\c-plus-plus
+2026-09-25T05:38:05.3557572Z Deleting the contents of 'D:\a\c-plus-plus\c-plus-plus'
+2026-09-25T05:38:05.3562481Z ##[group]Initializing the repository
+2026-09-25T05:38:05.3569368Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\c-plus-plus\c-plus-plus
+2026-09-25T05:38:05.7868650Z Initialized empty Git repository in D:/a/c-plus-plus/c-plus-plus/.git/
+2026-09-25T05:38:05.7926212Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/devvkf/c-plus-plus
+2026-09-25T05:38:06.0177907Z ##[endgroup]
+2026-09-25T05:38:06.0178361Z ##[group]Disabling automatic garbage collection
+2026-09-25T05:38:06.0186758Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-09-25T05:38:06.0433808Z ##[endgroup]
+2026-09-25T05:38:06.0444856Z ##[group]Setting up auth
+2026-09-25T05:38:06.0445559Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-09-25T05:38:06.0701443Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-09-25T05:38:09.7605893Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-25T05:38:09.7859210Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-09-25T05:38:10.3281693Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-25T05:38:10.3520992Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-09-25T05:38:10.7710180Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-09-25T05:38:10.7967619Z ##[endgroup]
+2026-09-25T05:38:10.7968136Z ##[group]Fetching the repository
+2026-09-25T05:38:10.7977240Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b:refs/remotes/origin/dev
+2026-09-25T05:38:12.8732973Z From https://github.com/devvkf/c-plus-plus
+2026-09-25T05:38:12.8733818Z  * [new ref]         6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b -> origin/dev
+2026-09-25T05:38:12.8769666Z ##[endgroup]
+2026-09-25T05:38:12.8770706Z ##[group]Determining the checkout info
+2026-09-25T05:38:12.8771841Z ##[endgroup]
+2026-09-25T05:38:12.8779487Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-09-25T05:38:12.9242795Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-09-25T05:38:12.9473607Z ##[group]Checking out the ref
+2026-09-25T05:38:12.9481315Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B dev refs/remotes/origin/dev
+2026-09-25T05:38:13.0417570Z Switched to a new branch 'dev'
+2026-09-25T05:38:13.0466970Z branch 'dev' set up to track 'origin/dev'.
+2026-09-25T05:38:13.0512553Z ##[endgroup]
+2026-09-25T05:38:13.0849269Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-09-25T05:38:13.1055826Z 6bf41fa186b4bdc200d6e7bcbf31b02ca8f8344b
+2026-09-25T05:38:13.1420941Z ##[group]Run Write-Host "=================== CPU SPECS ==================="
+2026-09-25T05:38:13.1421415Z [36;1mWrite-Host "=================== CPU SPECS ==================="[0m
+2026-09-25T05:38:13.1421784Z [36;1mGet-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors | Format-Table -AutoSize[0m
+2026-09-25T05:38:13.1422094Z [36;1m[0m
+2026-09-25T05:38:13.1422237Z [36;1mWrite-Host "=================== RAM SPECS ==================="[0m
+2026-09-25T05:38:13.1422534Z [36;1m$ram = (Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property Capacity -Sum).Sum / 1GB[0m
+2026-09-25T05:38:13.1422789Z [36;1mif (-not $ram) {[0m
+2026-09-25T05:38:13.1422991Z [36;1m  $ram = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory / 1GB[0m
+2026-09-25T05:38:13.1423201Z [36;1m}[0m
+2026-09-25T05:38:13.1423342Z [36;1mWrite-Host "Total RAM: $([math]::round($ram, 2)) GB"[0m
+2026-09-25T05:38:13.1423515Z [36;1m[0m
+2026-09-25T05:38:13.1424331Z [36;1mWrite-Host "=================== DISK SPECS ==================="[0m
+2026-09-25T05:38:13.1424744Z [36;1mGet-PSDrive C | Select-Object Name, @{Name="Used (GB)";Expression={[math]::round($_.Used/1GB,2)}}, @{Name="Free (GB)";Expression={[math]::round($_.Free/1GB,2)}} | Format-Table -AutoSize[0m
+2026-09-25T05:38:13.1425143Z [36;1mWrite-Host "=================================================="[0m
+2026-09-25T05:38:13.6083057Z shell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-09-25T05:38:13.6083378Z ##[endgroup]
+2026-09-25T05:38:18.9134505Z =================== CPU SPECS ===================
+2026-09-25T05:38:20.3391744Z 
+2026-09-25T05:38:20.3407048Z Name                                            NumberOfCores NumberOfLogicalProcessors
+2026-09-25T05:38:20.3409085Z ----                                            ------------- -------------------------
+2026-09-25T05:38:20.3411455Z AMD EPYC 9V45 96-Core Processor                             2                         4
+2026-09-25T05:38:20.3411733Z 
+2026-09-25T05:38:20.3411786Z 
+2026-09-25T05:38:20.3421332Z =================== RAM SPECS ===================
+2026-09-25T05:38:20.3970398Z Total RAM: 16 GB
+2026-09-25T05:38:20.3976155Z =================== DISK SPECS ===================
+2026-09-25T05:38:21.1508025Z 
+2026-09-25T05:38:21.1521575Z Name Used (GB) Free (GB)
+2026-09-25T05:38:21.1522160Z ---- --------- ---------
+2026-09-25T05:38:21.1522368Z C       120.06     29.39
+2026-09-25T05:38:21.1522848Z 
+2026-09-25T05:38:21.1522983Z 
+2026-09-25T05:38:21.1530466Z ==================================================
+2026-09-25T05:38:21.3538316Z ##[group]Run cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+2026-09-25T05:38:21.3538628Z [36;1mcmake -B build -S . -DCMAKE_BUILD_TYPE=Release[0m
+2026-09-25T05:38:21.5252860Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-25T05:38:21.5253117Z ##[endgroup]
+2026-09-25T05:38:34.1493072Z -- Building for: Visual Studio 18 2026
+2026-09-25T05:38:34.1493381Z -- The CXX compiler identification is MSVC 19.51.36257.0
+2026-09-25T05:38:34.3702753Z -- Detecting CXX compiler ABI info
+2026-09-25T05:38:35.8018720Z -- Detecting CXX compiler ABI info - done
+2026-09-25T05:38:35.8299406Z -- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Enterprise/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe - skipped
+2026-09-25T05:38:35.8311793Z -- Detecting CXX compile features
+2026-09-25T05:38:35.8325467Z -- Detecting CXX compile features - done
+2026-09-25T05:38:35.9956834Z -- Configuring done (13.5s)
+2026-09-25T05:38:36.0089199Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0089597Z   Target "lambda_lambda" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0090018Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0090291Z   flags to enable it.
+2026-09-25T05:38:36.0090371Z 
+2026-09-25T05:38:36.0090395Z 
+2026-09-25T05:38:36.0090467Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0090766Z   Target "lambda_lambda" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0091099Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0091290Z   flags to enable it.
+2026-09-25T05:38:36.0091361Z 
+2026-09-25T05:38:36.0091364Z 
+2026-09-25T05:38:36.0091437Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0091748Z   Target "lambda_lambda" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0092041Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0092230Z   flags to enable it.
+2026-09-25T05:38:36.0092302Z 
+2026-09-25T05:38:36.0092304Z 
+2026-09-25T05:38:36.0092373Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0092890Z   Target "lambda_lambda" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0093133Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0093534Z   flags to enable it.
+2026-09-25T05:38:36.0093773Z 
+2026-09-25T05:38:36.0093775Z 
+2026-09-25T05:38:36.0124837Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0125058Z   Target "lambda_vector_2x" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0125308Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0125497Z   flags to enable it.
+2026-09-25T05:38:36.0125567Z 
+2026-09-25T05:38:36.0125569Z 
+2026-09-25T05:38:36.0125734Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0126196Z   Target "lambda_vector_2x" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0126590Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0126895Z   flags to enable it.
+2026-09-25T05:38:36.0127005Z 
+2026-09-25T05:38:36.0127007Z 
+2026-09-25T05:38:36.0127106Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0127438Z   Target "lambda_vector_2x" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0127831Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0128138Z   flags to enable it.
+2026-09-25T05:38:36.0128244Z 
+2026-09-25T05:38:36.0128246Z 
+2026-09-25T05:38:36.0128356Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0128682Z   Target "lambda_vector_2x" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0131321Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0131833Z   flags to enable it.
+2026-09-25T05:38:36.0131954Z 
+2026-09-25T05:38:36.0131958Z 
+2026-09-25T05:38:36.0150342Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0150859Z   Target "meme_error" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0151237Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0151449Z   flags to enable it.
+2026-09-25T05:38:36.0151522Z 
+2026-09-25T05:38:36.0151536Z 
+2026-09-25T05:38:36.0151605Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0151807Z   Target "meme_error" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0152065Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0205987Z   flags to enable it.
+2026-09-25T05:38:36.0206263Z 
+2026-09-25T05:38:36.0206267Z 
+2026-09-25T05:38:36.0206401Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0206799Z   Target "meme_error" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0207220Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0207547Z   flags to enable it.
+2026-09-25T05:38:36.0207657Z 
+2026-09-25T05:38:36.0207660Z 
+2026-09-25T05:38:36.0207856Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0208195Z   Target "meme_error" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0208779Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0209100Z   flags to enable it.
+2026-09-25T05:38:36.0209228Z 
+2026-09-25T05:38:36.0209231Z 
+2026-09-25T05:38:36.0209335Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0209689Z   Target "meme_experiment" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0210107Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0210415Z   flags to enable it.
+2026-09-25T05:38:36.0210520Z 
+2026-09-25T05:38:36.0210523Z 
+2026-09-25T05:38:36.0210632Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0210965Z   Target "meme_experiment" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0211372Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0211884Z   flags to enable it.
+2026-09-25T05:38:36.0211994Z 
+2026-09-25T05:38:36.0211996Z 
+2026-09-25T05:38:36.0212100Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0212433Z   Target "meme_experiment" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0212824Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0213129Z   flags to enable it.
+2026-09-25T05:38:36.0213236Z 
+2026-09-25T05:38:36.0213240Z 
+2026-09-25T05:38:36.0213347Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0213682Z   Target "meme_experiment" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0214084Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0214394Z   flags to enable it.
+2026-09-25T05:38:36.0214507Z 
+2026-09-25T05:38:36.0214509Z 
+2026-09-25T05:38:36.0214609Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0214960Z   Target "meme_pythonmeme" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0215409Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0215741Z   flags to enable it.
+2026-09-25T05:38:36.0215844Z 
+2026-09-25T05:38:36.0215847Z 
+2026-09-25T05:38:36.0215957Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0216290Z   Target "meme_pythonmeme" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0216699Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0217011Z   flags to enable it.
+2026-09-25T05:38:36.0217685Z 
+2026-09-25T05:38:36.0217691Z 
+2026-09-25T05:38:36.0217812Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0218175Z   Target "meme_pythonmeme" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0218575Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0218878Z   flags to enable it.
+2026-09-25T05:38:36.0218986Z 
+2026-09-25T05:38:36.0218988Z 
+2026-09-25T05:38:36.0219091Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0219421Z   Target "meme_pythonmeme" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0219807Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0220111Z   flags to enable it.
+2026-09-25T05:38:36.0220222Z 
+2026-09-25T05:38:36.0220225Z 
+2026-09-25T05:38:36.0220347Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0220686Z   Target "chrono_timer" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0221091Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0221408Z   flags to enable it.
+2026-09-25T05:38:36.0221517Z 
+2026-09-25T05:38:36.0221527Z 
+2026-09-25T05:38:36.0221632Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0221977Z   Target "chrono_timer" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0222379Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0222696Z   flags to enable it.
+2026-09-25T05:38:36.0222810Z 
+2026-09-25T05:38:36.0222814Z 
+2026-09-25T05:38:36.0222921Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0223263Z   Target "chrono_timer" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0223654Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0223956Z   flags to enable it.
+2026-09-25T05:38:36.0224066Z 
+2026-09-25T05:38:36.0224073Z 
+2026-09-25T05:38:36.0224181Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0224514Z   Target "chrono_timer" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0224919Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0225243Z   flags to enable it.
+2026-09-25T05:38:36.0225357Z 
+2026-09-25T05:38:36.0225977Z 
+2026-09-25T05:38:36.0242943Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0243221Z   Target "namespaces_namespaces" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0243490Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0243717Z   the flags to enable it.
+2026-09-25T05:38:36.0243855Z 
+2026-09-25T05:38:36.0243859Z 
+2026-09-25T05:38:36.0244195Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0244583Z   Target "namespaces_namespaces" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0245035Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0245366Z   the flags to enable it.
+2026-09-25T05:38:36.0245493Z 
+2026-09-25T05:38:36.0245497Z 
+2026-09-25T05:38:36.0245610Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0245967Z   Target "namespaces_namespaces" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0246405Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0246722Z   the flags to enable it.
+2026-09-25T05:38:36.0246845Z 
+2026-09-25T05:38:36.0246848Z 
+2026-09-25T05:38:36.0246944Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0247283Z   Target "namespaces_namespaces" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0247704Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0248026Z   the flags to enable it.
+2026-09-25T05:38:36.0248146Z 
+2026-09-25T05:38:36.0248320Z 
+2026-09-25T05:38:36.0267162Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0267482Z   Target "namespaces_unit_converter" requires the language dialect "CXX26" .
+2026-09-25T05:38:36.0267846Z   But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0268052Z   know the flags to enable it.
+2026-09-25T05:38:36.0268150Z 
+2026-09-25T05:38:36.0268156Z 
+2026-09-25T05:38:36.0268222Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0268438Z   Target "namespaces_unit_converter" requires the language dialect "CXX26" .
+2026-09-25T05:38:36.0268692Z   But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0268978Z   know the flags to enable it.
+2026-09-25T05:38:36.0269062Z 
+2026-09-25T05:38:36.0269064Z 
+2026-09-25T05:38:36.0269274Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0269562Z   Target "namespaces_unit_converter" requires the language dialect "CXX26" .
+2026-09-25T05:38:36.0269814Z   But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0270008Z   know the flags to enable it.
+2026-09-25T05:38:36.0270095Z 
+2026-09-25T05:38:36.0270096Z 
+2026-09-25T05:38:36.0270164Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0270373Z   Target "namespaces_unit_converter" requires the language dialect "CXX26" .
+2026-09-25T05:38:36.0270622Z   But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0270815Z   know the flags to enable it.
+2026-09-25T05:38:36.0270896Z 
+2026-09-25T05:38:36.0270902Z 
+2026-09-25T05:38:36.0290847Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0291131Z   Target "ptr_ptr" requires the language dialect "CXX26" .  But the current
+2026-09-25T05:38:36.0291530Z   compiler "MSVC" does not support this, or CMake does not know the flags to
+2026-09-25T05:38:36.0291742Z   enable it.
+2026-09-25T05:38:36.0291801Z 
+2026-09-25T05:38:36.0291806Z 
+2026-09-25T05:38:36.0291874Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0292079Z   Target "ptr_ptr" requires the language dialect "CXX26" .  But the current
+2026-09-25T05:38:36.0292324Z   compiler "MSVC" does not support this, or CMake does not know the flags to
+2026-09-25T05:38:36.0292591Z   enable it.
+2026-09-25T05:38:36.0292690Z 
+2026-09-25T05:38:36.0292934Z 
+2026-09-25T05:38:36.0293031Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0293236Z   Target "ptr_ptr" requires the language dialect "CXX26" .  But the current
+2026-09-25T05:38:36.0293476Z   compiler "MSVC" does not support this, or CMake does not know the flags to
+2026-09-25T05:38:36.0293669Z   enable it.
+2026-09-25T05:38:36.0293726Z 
+2026-09-25T05:38:36.0293728Z 
+2026-09-25T05:38:36.0293796Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0293999Z   Target "ptr_ptr" requires the language dialect "CXX26" .  But the current
+2026-09-25T05:38:36.0294241Z   compiler "MSVC" does not support this, or CMake does not know the flags to
+2026-09-25T05:38:36.0294429Z   enable it.
+2026-09-25T05:38:36.0294489Z 
+2026-09-25T05:38:36.0294491Z 
+2026-09-25T05:38:36.0313152Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0313408Z   Target "ptr_shared_ptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0313826Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0314023Z   flags to enable it.
+2026-09-25T05:38:36.0314094Z 
+2026-09-25T05:38:36.0314099Z 
+2026-09-25T05:38:36.0314169Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0314371Z   Target "ptr_shared_ptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0314613Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0314876Z   flags to enable it.
+2026-09-25T05:38:36.0314986Z 
+2026-09-25T05:38:36.0314989Z 
+2026-09-25T05:38:36.0315229Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0315504Z   Target "ptr_shared_ptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0315746Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0315935Z   flags to enable it.
+2026-09-25T05:38:36.0316003Z 
+2026-09-25T05:38:36.0316005Z 
+2026-09-25T05:38:36.0316075Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0316276Z   Target "ptr_shared_ptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0316519Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0316711Z   flags to enable it.
+2026-09-25T05:38:36.0316785Z 
+2026-09-25T05:38:36.0316787Z 
+2026-09-25T05:38:36.0336230Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0336532Z   Target "ptr_uniqueptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0336900Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0337092Z   flags to enable it.
+2026-09-25T05:38:36.0337164Z 
+2026-09-25T05:38:36.0337168Z 
+2026-09-25T05:38:36.0337232Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0337434Z   Target "ptr_uniqueptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0337677Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0337954Z   flags to enable it.
+2026-09-25T05:38:36.0338060Z 
+2026-09-25T05:38:36.0338065Z 
+2026-09-25T05:38:36.0338184Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0338814Z   Target "ptr_uniqueptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0339089Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0339278Z   flags to enable it.
+2026-09-25T05:38:36.0339346Z 
+2026-09-25T05:38:36.0339347Z 
+2026-09-25T05:38:36.0339423Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0339626Z   Target "ptr_uniqueptr" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0339868Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0340058Z   flags to enable it.
+2026-09-25T05:38:36.0340134Z 
+2026-09-25T05:38:36.0340136Z 
+2026-09-25T05:38:36.0358782Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0359249Z   Target "variables_and_datatypes_circle_perimeter_finder" requires the
+2026-09-25T05:38:36.0359544Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0359856Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0359986Z 
+2026-09-25T05:38:36.0359990Z 
+2026-09-25T05:38:36.0360111Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0360377Z   Target "variables_and_datatypes_circle_perimeter_finder" requires the
+2026-09-25T05:38:36.0360614Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0360943Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0361104Z 
+2026-09-25T05:38:36.0361106Z 
+2026-09-25T05:38:36.0361175Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0361381Z   Target "variables_and_datatypes_circle_perimeter_finder" requires the
+2026-09-25T05:38:36.0361617Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0361836Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0361964Z 
+2026-09-25T05:38:36.0361966Z 
+2026-09-25T05:38:36.0362031Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0362234Z   Target "variables_and_datatypes_circle_perimeter_finder" requires the
+2026-09-25T05:38:36.0362469Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0362684Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0363505Z 
+2026-09-25T05:38:36.0363510Z 
+2026-09-25T05:38:36.0381639Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0381967Z   Target "ternary_operator_grade_checker" requires the language dialect
+2026-09-25T05:38:36.0382313Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0382517Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0382622Z 
+2026-09-25T05:38:36.0382626Z 
+2026-09-25T05:38:36.0382693Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0382903Z   Target "ternary_operator_grade_checker" requires the language dialect
+2026-09-25T05:38:36.0383148Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0383474Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0383626Z 
+2026-09-25T05:38:36.0383628Z 
+2026-09-25T05:38:36.0383748Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0384005Z   Target "ternary_operator_grade_checker" requires the language dialect
+2026-09-25T05:38:36.0384240Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0384435Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0384529Z 
+2026-09-25T05:38:36.0384530Z 
+2026-09-25T05:38:36.0384599Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0384799Z   Target "ternary_operator_grade_checker" requires the language dialect
+2026-09-25T05:38:36.0385037Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0385231Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0385325Z 
+2026-09-25T05:38:36.0385327Z 
+2026-09-25T05:38:36.0403693Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0404002Z   Target "templates_template" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0404391Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0404618Z   the flags to enable it.
+2026-09-25T05:38:36.0404752Z 
+2026-09-25T05:38:36.0404754Z 
+2026-09-25T05:38:36.0404975Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0405262Z   Target "templates_template" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0405595Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0405926Z   the flags to enable it.
+2026-09-25T05:38:36.0406008Z 
+2026-09-25T05:38:36.0406010Z 
+2026-09-25T05:38:36.0406106Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0406409Z   Target "templates_template" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0406658Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0406855Z   the flags to enable it.
+2026-09-25T05:38:36.0406929Z 
+2026-09-25T05:38:36.0406931Z 
+2026-09-25T05:38:36.0406999Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0407208Z   Target "templates_template" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0407454Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0407645Z   the flags to enable it.
+2026-09-25T05:38:36.0407723Z 
+2026-09-25T05:38:36.0407725Z 
+2026-09-25T05:38:36.0426409Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0426733Z   Target "static_polymorphism_conceptuaprobably" requires the language
+2026-09-25T05:38:36.0427099Z   dialect "CXX26" .  But the current compiler "MSVC" does not support this,
+2026-09-25T05:38:36.0427304Z   or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0427414Z 
+2026-09-25T05:38:36.0427416Z 
+2026-09-25T05:38:36.0427484Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0427687Z   Target "static_polymorphism_conceptuaprobably" requires the language
+2026-09-25T05:38:36.0427928Z   dialect "CXX26" .  But the current compiler "MSVC" does not support this,
+2026-09-25T05:38:36.0428313Z   or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0428495Z 
+2026-09-25T05:38:36.0428497Z 
+2026-09-25T05:38:36.0428597Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0428886Z   Target "static_polymorphism_conceptuaprobably" requires the language
+2026-09-25T05:38:36.0429124Z   dialect "CXX26" .  But the current compiler "MSVC" does not support this,
+2026-09-25T05:38:36.0429337Z   or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0429439Z 
+2026-09-25T05:38:36.0429441Z 
+2026-09-25T05:38:36.0429510Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0429711Z   Target "static_polymorphism_conceptuaprobably" requires the language
+2026-09-25T05:38:36.0429946Z   dialect "CXX26" .  But the current compiler "MSVC" does not support this,
+2026-09-25T05:38:36.0430149Z   or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0430257Z 
+2026-09-25T05:38:36.0430259Z 
+2026-09-25T05:38:36.0456169Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0458053Z   Target "static_polymorphism_concept" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0461690Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0462014Z   know the flags to enable it.
+2026-09-25T05:38:36.0462418Z 
+2026-09-25T05:38:36.0462554Z 
+2026-09-25T05:38:36.0463261Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0463586Z   Target "static_polymorphism_concept" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0463931Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0464219Z   know the flags to enable it.
+2026-09-25T05:38:36.0464347Z 
+2026-09-25T05:38:36.0464349Z 
+2026-09-25T05:38:36.0464486Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0464754Z   Target "static_polymorphism_concept" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0465105Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0465326Z   know the flags to enable it.
+2026-09-25T05:38:36.0465427Z 
+2026-09-25T05:38:36.0465434Z 
+2026-09-25T05:38:36.0465500Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0466770Z   Target "static_polymorphism_concept" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0468041Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0469011Z   know the flags to enable it.
+2026-09-25T05:38:36.0469099Z 
+2026-09-25T05:38:36.0469117Z 
+2026-09-25T05:38:36.0503401Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0503729Z   Target "static_polymorphism_conceptuamaybe" requires the language dialect
+2026-09-25T05:38:36.0504107Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0504311Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0504412Z 
+2026-09-25T05:38:36.0504414Z 
+2026-09-25T05:38:36.0504496Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0504716Z   Target "static_polymorphism_conceptuamaybe" requires the language dialect
+2026-09-25T05:38:36.0504970Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0505246Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0505410Z 
+2026-09-25T05:38:36.0505417Z 
+2026-09-25T05:38:36.0505537Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0505802Z   Target "static_polymorphism_conceptuamaybe" requires the language dialect
+2026-09-25T05:38:36.0506075Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0506272Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0506363Z 
+2026-09-25T05:38:36.0506365Z 
+2026-09-25T05:38:36.0506437Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0506748Z   Target "static_polymorphism_conceptuamaybe" requires the language dialect
+2026-09-25T05:38:36.0506996Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0507190Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0507286Z 
+2026-09-25T05:38:36.0507288Z 
+2026-09-25T05:38:36.0526390Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0526697Z   Target "static_polymorphism_isDouble" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0527088Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0527290Z   know the flags to enable it.
+2026-09-25T05:38:36.0527373Z 
+2026-09-25T05:38:36.0527381Z 
+2026-09-25T05:38:36.0527446Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0527662Z   Target "static_polymorphism_isDouble" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0527913Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0528199Z   know the flags to enable it.
+2026-09-25T05:38:36.0528349Z 
+2026-09-25T05:38:36.0528352Z 
+2026-09-25T05:38:36.0528449Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0528784Z   Target "static_polymorphism_isDouble" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0529031Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0529225Z   know the flags to enable it.
+2026-09-25T05:38:36.0529313Z 
+2026-09-25T05:38:36.0529314Z 
+2026-09-25T05:38:36.0529378Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0529611Z   Target "static_polymorphism_isDouble" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0529860Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0530076Z   know the flags to enable it.
+2026-09-25T05:38:36.0530160Z 
+2026-09-25T05:38:36.0530162Z 
+2026-09-25T05:38:36.0562911Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0565936Z   Target "static_polymorphism_concepts-actually" requires the language
+2026-09-25T05:38:36.0566377Z   dialect "CXX26" .  But the current compiler "MSVC" does not support this,
+2026-09-25T05:38:36.0568002Z   or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0568184Z 
+2026-09-25T05:38:36.0568633Z 
+2026-09-25T05:38:36.0568844Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0569209Z   Target "static_polymorphism_concepts-actually" requires the language
+2026-09-25T05:38:36.0569452Z   dialect "CXX26" .  But the current compiler "MSVC" does not support this,
+2026-09-25T05:38:36.0569660Z   or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0569773Z 
+2026-09-25T05:38:36.0569775Z 
+2026-09-25T05:38:36.0569839Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0570048Z   Target "static_polymorphism_concepts-actually" requires the language
+2026-09-25T05:38:36.0570288Z   dialect "CXX26" .  But the current compiler "MSVC" does not support this,
+2026-09-25T05:38:36.0570502Z   or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0570608Z 
+2026-09-25T05:38:36.0570609Z 
+2026-09-25T05:38:36.0570678Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0570883Z   Target "static_polymorphism_concepts-actually" requires the language
+2026-09-25T05:38:36.0571128Z   dialect "CXX26" .  But the current compiler "MSVC" does not support this,
+2026-09-25T05:38:36.0571335Z   or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0571443Z 
+2026-09-25T05:38:36.0571445Z 
+2026-09-25T05:38:36.0601739Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0603058Z   Target "static_polymorphism_stdconcepts" requires the language dialect
+2026-09-25T05:38:36.0603408Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0603684Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0603830Z 
+2026-09-25T05:38:36.0603848Z 
+2026-09-25T05:38:36.0605616Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0606029Z   Target "static_polymorphism_stdconcepts" requires the language dialect
+2026-09-25T05:38:36.0606812Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0607166Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0607319Z 
+2026-09-25T05:38:36.0607321Z 
+2026-09-25T05:38:36.0607394Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0607604Z   Target "static_polymorphism_stdconcepts" requires the language dialect
+2026-09-25T05:38:36.0607847Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0608046Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0608141Z 
+2026-09-25T05:38:36.0608143Z 
+2026-09-25T05:38:36.0608208Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0608414Z   Target "static_polymorphism_stdconcepts" requires the language dialect
+2026-09-25T05:38:36.0608662Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0608858Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0608951Z 
+2026-09-25T05:38:36.0608953Z 
+2026-09-25T05:38:36.0627221Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0627534Z   Target "variables_and_datatypes_compound_interest_calculator" requires the
+2026-09-25T05:38:36.0627912Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0628141Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0628326Z 
+2026-09-25T05:38:36.0628330Z 
+2026-09-25T05:38:36.0628511Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0628777Z   Target "variables_and_datatypes_compound_interest_calculator" requires the
+2026-09-25T05:38:36.0629152Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0629396Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0629609Z 
+2026-09-25T05:38:36.0629615Z 
+2026-09-25T05:38:36.0629684Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0629902Z   Target "variables_and_datatypes_compound_interest_calculator" requires the
+2026-09-25T05:38:36.0630151Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0630373Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0630621Z 
+2026-09-25T05:38:36.0630623Z 
+2026-09-25T05:38:36.0630694Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0630909Z   Target "variables_and_datatypes_compound_interest_calculator" requires the
+2026-09-25T05:38:36.0631155Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0631378Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0631508Z 
+2026-09-25T05:38:36.0631510Z 
+2026-09-25T05:38:36.0650308Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0650608Z   Target "vector_vector" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0651001Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0651201Z   flags to enable it.
+2026-09-25T05:38:36.0651273Z 
+2026-09-25T05:38:36.0651277Z 
+2026-09-25T05:38:36.0651347Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0651561Z   Target "vector_vector" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0651814Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0652014Z   flags to enable it.
+2026-09-25T05:38:36.0652133Z 
+2026-09-25T05:38:36.0652136Z 
+2026-09-25T05:38:36.0652371Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0652709Z   Target "vector_vector" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0652994Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0653843Z   flags to enable it.
+2026-09-25T05:38:36.0653930Z 
+2026-09-25T05:38:36.0653932Z 
+2026-09-25T05:38:36.0654007Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0654214Z   Target "vector_vector" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0654467Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0654669Z   flags to enable it.
+2026-09-25T05:38:36.0654743Z 
+2026-09-25T05:38:36.0654745Z 
+2026-09-25T05:38:36.0673238Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0673540Z   Target "variables_and_datatypes_name_asker" requires the language dialect
+2026-09-25T05:38:36.0673919Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0674178Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0674326Z 
+2026-09-25T05:38:36.0674328Z 
+2026-09-25T05:38:36.0674429Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0674654Z   Target "variables_and_datatypes_name_asker" requires the language dialect
+2026-09-25T05:38:36.0674976Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0675236Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0675330Z 
+2026-09-25T05:38:36.0675332Z 
+2026-09-25T05:38:36.0675420Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0675740Z   Target "variables_and_datatypes_name_asker" requires the language dialect
+2026-09-25T05:38:36.0675987Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0676185Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0676283Z 
+2026-09-25T05:38:36.0676285Z 
+2026-09-25T05:38:36.0676351Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0676559Z   Target "variables_and_datatypes_name_asker" requires the language dialect
+2026-09-25T05:38:36.0676811Z   "CXX26" .  But the current compiler "MSVC" does not support this, or CMake
+2026-09-25T05:38:36.0677428Z   does not know the flags to enable it.
+2026-09-25T05:38:36.0677526Z 
+2026-09-25T05:38:36.0677527Z 
+2026-09-25T05:38:36.0696543Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0696847Z   Target "vector_vector_sort" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0697260Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0697685Z   the flags to enable it.
+2026-09-25T05:38:36.0697768Z 
+2026-09-25T05:38:36.0697773Z 
+2026-09-25T05:38:36.0697836Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0698052Z   Target "vector_vector_sort" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0698392Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0698699Z   the flags to enable it.
+2026-09-25T05:38:36.0698778Z 
+2026-09-25T05:38:36.0698779Z 
+2026-09-25T05:38:36.0698852Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0699183Z   Target "vector_vector_sort" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0699430Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0699626Z   the flags to enable it.
+2026-09-25T05:38:36.0699707Z 
+2026-09-25T05:38:36.0699709Z 
+2026-09-25T05:38:36.0699780Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0699991Z   Target "vector_vector_sort" requires the language dialect "CXX26" .  But
+2026-09-25T05:38:36.0700240Z   the current compiler "MSVC" does not support this, or CMake does not know
+2026-09-25T05:38:36.0700438Z   the flags to enable it.
+2026-09-25T05:38:36.0700517Z 
+2026-09-25T05:38:36.0700519Z 
+2026-09-25T05:38:36.0722879Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0723212Z   Target "variables_and_datatypes_simple_interest_calculator" requires the
+2026-09-25T05:38:36.0723673Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0723912Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0724058Z 
+2026-09-25T05:38:36.0724060Z 
+2026-09-25T05:38:36.0724130Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0724342Z   Target "variables_and_datatypes_simple_interest_calculator" requires the
+2026-09-25T05:38:36.0724667Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0725039Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0725243Z 
+2026-09-25T05:38:36.0725245Z 
+2026-09-25T05:38:36.0725313Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0725527Z   Target "variables_and_datatypes_simple_interest_calculator" requires the
+2026-09-25T05:38:36.0725770Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0725997Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0726124Z 
+2026-09-25T05:38:36.0726128Z 
+2026-09-25T05:38:36.0726196Z CMake Error in learning-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0726405Z   Target "variables_and_datatypes_simple_interest_calculator" requires the
+2026-09-25T05:38:36.0726646Z   language dialect "CXX26" .  But the current compiler "MSVC" does not
+2026-09-25T05:38:36.0726872Z   support this, or CMake does not know the flags to enable it.
+2026-09-25T05:38:36.0727004Z 
+2026-09-25T05:38:36.0727006Z 
+2026-09-25T05:38:36.0750191Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0750461Z   Target "fp_checker" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0750831Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0751099Z   flags to enable it.
+2026-09-25T05:38:36.0751170Z 
+2026-09-25T05:38:36.0751175Z 
+2026-09-25T05:38:36.0751263Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0751624Z   Target "fp_checker" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0751880Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0752130Z   flags to enable it.
+2026-09-25T05:38:36.0752619Z 
+2026-09-25T05:38:36.0752621Z 
+2026-09-25T05:38:36.0752726Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0753047Z   Target "fp_checker" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0753580Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0753794Z   flags to enable it.
+2026-09-25T05:38:36.0753866Z 
+2026-09-25T05:38:36.0753868Z 
+2026-09-25T05:38:36.0753928Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0754119Z   Target "fp_checker" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0754363Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0754560Z   flags to enable it.
+2026-09-25T05:38:36.0754628Z 
+2026-09-25T05:38:36.0754630Z 
+2026-09-25T05:38:36.0774755Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0775043Z   Target "compound_interest_calculator" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0775437Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0775716Z   know the flags to enable it.
+2026-09-25T05:38:36.0775807Z 
+2026-09-25T05:38:36.0775811Z 
+2026-09-25T05:38:36.0775884Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0776098Z   Target "compound_interest_calculator" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0776355Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0776701Z   know the flags to enable it.
+2026-09-25T05:38:36.0776833Z 
+2026-09-25T05:38:36.0776858Z 
+2026-09-25T05:38:36.0776955Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0777212Z   Target "compound_interest_calculator" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0777568Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0777768Z   know the flags to enable it.
+2026-09-25T05:38:36.0777855Z 
+2026-09-25T05:38:36.0777857Z 
+2026-09-25T05:38:36.0777919Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0778130Z   Target "compound_interest_calculator" requires the language dialect "CXX26"
+2026-09-25T05:38:36.0778388Z   .  But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0778585Z   know the flags to enable it.
+2026-09-25T05:38:36.0778670Z 
+2026-09-25T05:38:36.0778672Z 
+2026-09-25T05:38:36.0801031Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0801342Z   Target "simple_interest_calculator" requires the language dialect "CXX26" .
+2026-09-25T05:38:36.0801728Z   But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0801984Z   know the flags to enable it.
+2026-09-25T05:38:36.0802067Z 
+2026-09-25T05:38:36.0802072Z 
+2026-09-25T05:38:36.0802136Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0802343Z   Target "simple_interest_calculator" requires the language dialect "CXX26" .
+2026-09-25T05:38:36.0802596Z   But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0802907Z   know the flags to enable it.
+2026-09-25T05:38:36.0803052Z 
+2026-09-25T05:38:36.0803058Z 
+2026-09-25T05:38:36.0803162Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0803454Z   Target "simple_interest_calculator" requires the language dialect "CXX26" .
+2026-09-25T05:38:36.0803709Z   But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0803902Z   know the flags to enable it.
+2026-09-25T05:38:36.0803983Z 
+2026-09-25T05:38:36.0803985Z 
+2026-09-25T05:38:36.0804048Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0804251Z   Target "simple_interest_calculator" requires the language dialect "CXX26" .
+2026-09-25T05:38:36.0804503Z   But the current compiler "MSVC" does not support this, or CMake does not
+2026-09-25T05:38:36.0804701Z   know the flags to enable it.
+2026-09-25T05:38:36.0804784Z 
+2026-09-25T05:38:36.0804785Z 
+2026-09-25T05:38:36.0824102Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0824395Z   Target "unit_converter" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0824882Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0825080Z   flags to enable it.
+2026-09-25T05:38:36.0825157Z 
+2026-09-25T05:38:36.0825159Z 
+2026-09-25T05:38:36.0825219Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0825416Z   Target "unit_converter" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0825670Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0825985Z   flags to enable it.
+2026-09-25T05:38:36.0826096Z 
+2026-09-25T05:38:36.0826105Z 
+2026-09-25T05:38:36.0826212Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0826502Z   Target "unit_converter" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0826749Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0826946Z   flags to enable it.
+2026-09-25T05:38:36.0827020Z 
+2026-09-25T05:38:36.0827022Z 
+2026-09-25T05:38:36.0827090Z CMake Error in app-projects/CMakeLists.txt:
+2026-09-25T05:38:36.0827291Z   Target "unit_converter" requires the language dialect "CXX26" .  But the
+2026-09-25T05:38:36.0827534Z   current compiler "MSVC" does not support this, or CMake does not know the
+2026-09-25T05:38:36.0827728Z   flags to enable it.
+2026-09-25T05:38:36.0827800Z 
+2026-09-25T05:38:36.0827802Z 
+2026-09-25T05:38:36.0943825Z -- Generating done (0.1s)
+2026-09-25T05:38:36.0944036Z CMake Warning (unused-cli):
+2026-09-25T05:38:36.0944343Z   Manually-specified variables were not used by the project:
+2026-09-25T05:38:36.0944496Z 
+2026-09-25T05:38:36.0944718Z     CMAKE_BUILD_TYPE
+2026-09-25T05:38:36.0944788Z 
+2026-09-25T05:38:36.0944790Z 
+2026-09-25T05:38:36.0944896Z CMake Generate step failed.  Build files cannot be regenerated correctly.
+2026-09-25T05:38:36.2259720Z ##[error]Process completed with exit code 1.
+2026-09-25T05:38:36.2475206Z Post job cleanup.
+2026-09-25T05:38:36.3563054Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-09-25T05:38:36.3771037Z git version 2.55.0.windows.5
+2026-09-25T05:38:36.3821542Z Temporarily overriding HOME='D:\a\_temp\9b3e304a-71ad-4f36-b6ef-985de1a57cb5' before making global git config changes
+2026-09-25T05:38:36.3821947Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-25T05:38:36.3829294Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\c-plus-plus\c-plus-plus
+2026-09-25T05:38:36.4054825Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-09-25T05:38:36.4277678Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-09-25T05:38:36.9884127Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-25T05:38:37.0078704Z http.https://github.com/.extraheader
+2026-09-25T05:38:37.0119032Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-09-25T05:38:37.0352941Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-09-25T05:38:37.5782045Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-25T05:38:37.5998350Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-09-25T05:38:38.0114676Z Cleaning up orphan processes
+2026-09-25T05:38:38.0268109Z Terminate orphan process: pid (8848) (vctip)
+2026-09-25T05:38:38.0278915Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

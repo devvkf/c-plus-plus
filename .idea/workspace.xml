@@ -17,7 +17,38 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="c_plus_plus" targetName="meme_experiment" />
+      <config projectName="c_plus_plus" targetName="variables_and_datatypes_simple_interest_calculator" />
+      <config projectName="c_plus_plus" targetName="meme_error" />
+      <config projectName="c_plus_plus" targetName="fp_checker" />
+      <config projectName="c_plus_plus" targetName="static_polymorphism_conceptuamaybe" />
+      <config projectName="c_plus_plus" targetName="chrono_timer" />
+      <config projectName="c_plus_plus" targetName="ptr_uniqueptr" />
+      <config projectName="c_plus_plus" targetName="compound_interest_calculator" />
+      <config projectName="c_plus_plus" targetName="meme_pythonmeme" />
+      <config projectName="c_plus_plus" targetName="ptr_ptr" />
+      <config projectName="c_plus_plus" targetName="static_polymorphism_concept" />
+      <config projectName="c_plus_plus" targetName="lambda_lambda" />
+      <config projectName="c_plus_plus" targetName="static_polymorphism_conceptuaprobably" />
+      <config projectName="c_plus_plus" targetName="variables_and_datatypes_name_asker" />
+      <config projectName="c_plus_plus" targetName="templates_template" />
+      <config projectName="c_plus_plus" targetName="variables_and_datatypes_circle_perimeter_finder" />
+      <config projectName="c_plus_plus" targetName="simple_interest_calculator" />
+      <config projectName="c_plus_plus" targetName="static_polymorphism_concepts-actually" />
+      <config projectName="c_plus_plus" targetName="variables_and_datatypes_compound_interest_calculator" />
+      <config projectName="c_plus_plus" targetName="ptr_shared_ptr" />
+      <config projectName="c_plus_plus" targetName="vector_vector_sort" />
+      <config projectName="c_plus_plus" targetName="namespaces_unit_converter" />
+      <config projectName="c_plus_plus" targetName="ternary_operator_grade_checker" />
+      <config projectName="c_plus_plus" targetName="static_polymorphism_isDouble" />
+      <config projectName="c_plus_plus" targetName="vector_vector" />
+      <config projectName="c_plus_plus" targetName="ptr_pokedex" />
+      <config projectName="c_plus_plus" targetName="static_polymorphism_stdconcepts" />
+      <config projectName="c_plus_plus" targetName="lambda_vector_2x" />
+      <config projectName="c_plus_plus" targetName="namespaces_namespaces" />
+      <config projectName="c_plus_plus" targetName="unit_converter" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -25,8 +56,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2046589-d8fa-4ec7-b27e-0f7cd9a8b964" name="Changes" comment="add: unique ptr">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c2046589-d8fa-4ec7-b27e-0f7cd9a8b964" name="Changes" comment="add: shared ptr">
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning-projects/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/learning-projects/CMakeLists.txt" afterDir="false" />
     </list>
@@ -39,8 +69,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="72" />
+    <option name="cachedIndexableFilesCount" value="73" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -73,61 +104,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.2005751616516371" />
-      <entry key="MS500" value="2.5243672039873313" />
-      <entry key="S2" value="3.50815208842577" />
-      <entry key="S5" value="3.790326473323294" />
-      <entry key="S10" value="3.8928618985770194" />
-      <entry key="S30" value="3.968595802205313" />
-      <entry key="S60" value="4.5394425159239855" />
-      <entry key="M2" value="11.334381575624555" />
-      <entry key="M5" value="47.86027572254232" />
-      <entry key="M10" value="103.63970446717171" />
-      <entry key="M15" value="163.17138787531383" />
-      <entry key="M30" value="375.8014158449384" />
-      <entry key="H1" value="835.1282654854746" />
-      <entry key="H2" value="1638.2149224900343" />
-      <entry key="H4" value="2632.7222003302672" />
-      <entry key="D1" value="4296.607105562197" />
-      <entry key="W1" value="4716.787901866951" />
+      <entry key="MS100" value="1.4445615637355973" />
+      <entry key="MS500" value="2.458598363731486" />
+      <entry key="S2" value="2.846891788497679" />
+      <entry key="S5" value="2.9371997698807606" />
+      <entry key="S10" value="2.973598926025745" />
+      <entry key="S30" value="3.3928759706005915" />
+      <entry key="S60" value="5.046297510240948" />
+      <entry key="M2" value="11.509594856681767" />
+      <entry key="M5" value="53.781595929208166" />
+      <entry key="M10" value="125.90188604138217" />
+      <entry key="M15" value="174.24474730351494" />
+      <entry key="M30" value="246.46989557831256" />
+      <entry key="H1" value="317.7387906831343" />
+      <entry key="H2" value="594.6006324900686" />
+      <entry key="H4" value="1414.7592830425604" />
+      <entry key="D1" value="4090.5451624203642" />
+      <entry key="W1" value="5027.251385209434" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="2.670410216143914E-141" />
-      <entry key="S10" value="5.167601199922358E-71" />
-      <entry key="S30" value="3.7247431871668E-24" />
-      <entry key="S60" value="1.9302276243189094E-12" />
-      <entry key="M2" value="1.412306236041125E-6" />
-      <entry key="M5" value="0.005921036614621806" />
-      <entry key="M10" value="0.12894979821730976" />
-      <entry key="M15" value="0.4102164976497672" />
-      <entry key="M30" value="1.6634446722275202" />
-      <entry key="H1" value="4.887372238552478" />
-      <entry key="H2" value="12.205977557404237" />
-      <entry key="H4" value="22.967965369108434" />
-      <entry key="D1" value="42.83620768163257" />
-      <entry key="W1" value="48.05892760417257" />
+      <entry key="MS100" value="3.427E-320" />
+      <entry key="MS500" value="1.280753904602283E-64" />
+      <entry key="S2" value="1.25754107941722E-16" />
+      <entry key="S5" value="6.225941961514218E-7" />
+      <entry key="S10" value="0.001182610656242452" />
+      <entry key="S30" value="0.2077100622458644" />
+      <entry key="S60" value="0.7822849581947129" />
+      <entry key="M2" value="1.5385057382396192" />
+      <entry key="M5" value="2.4500903376406975" />
+      <entry key="M10" value="3.02149006814758" />
+      <entry key="M15" value="3.2850978490327973" />
+      <entry key="M30" value="3.607583082832763" />
+      <entry key="H1" value="3.9685260801155287" />
+      <entry key="H2" value="6.165313974805248" />
+      <entry key="H4" value="13.928779428350415" />
+      <entry key="D1" value="42.47341296394467" />
+      <entry key="W1" value="52.97664324821886" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.35088804858709716" />
-      <entry key="MS500" value="2.204056855742888" />
-      <entry key="S2" value="3.415169442599133" />
-      <entry key="S5" value="3.751932555832231" />
-      <entry key="S10" value="3.873457347089277" />
-      <entry key="S30" value="3.96201702243479" />
-      <entry key="S60" value="4.532659451814096" />
-      <entry key="M2" value="11.309765587093676" />
-      <entry key="M5" value="47.812023348185754" />
-      <entry key="M10" value="103.71005816607206" />
-      <entry key="M15" value="163.5230660186129" />
-      <entry key="M30" value="377.40504505854705" />
-      <entry key="H1" value="839.9516525936006" />
-      <entry key="H2" value="1650.3573878647953" />
-      <entry key="H4" value="2655.63875887317" />
-      <entry key="D1" value="4339.429324830195" />
-      <entry key="W1" value="4764.8446372721955" />
+      <entry key="MS100" value="1.4216453235429873" />
+      <entry key="MS500" value="2.4497760717380506" />
+      <entry key="S2" value="2.8442796276499815" />
+      <entry key="S5" value="2.936112775092124" />
+      <entry key="S10" value="2.973592883703242" />
+      <entry key="S30" value="3.5849652717472993" />
+      <entry key="S60" value="5.798862916084669" />
+      <entry key="M2" value="13.008748917412325" />
+      <entry key="M5" value="56.17342964476784" />
+      <entry key="M10" value="128.86261803141883" />
+      <entry key="M15" value="177.4759890569175" />
+      <entry key="M30" value="250.04091462855104" />
+      <entry key="H1" value="321.68424120327984" />
+      <entry key="H2" value="600.7441257733703" />
+      <entry key="H4" value="1428.6613971281558" />
+      <entry key="D1" value="4133.005502857345" />
+      <entry key="W1" value="5080.225729890079" />
     </decayedShown>
   </component>
   <component name="ProjectApplicationVersion">
@@ -151,65 +182,68 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;C/C++ File.circle_perimeter_finder.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.compound_interest_calculator.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.concept.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.concepts-actually.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.conceptuamaybe.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.conceptuaprobably.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.datatype.cpp (1).executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.datatype.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.error.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.experiment.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.grade_checker.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.isDouble.cpp (1).executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.isDouble.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.lambda.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.namespaces.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.ptr.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.pythonmeme.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.simple_interest_calculator.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.stdconcepts.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.stopwatchByLambda.cpp (1).executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.stopwatchByLambda.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.template.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.uniqueptr.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.unit_converter.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.vector.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.vector_2x.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.vector_sort.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bened/c-plus-plus/compiled-projects/fp_checker&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "C/C++ File.circle_perimeter_finder.cpp.executor": "Run",
+    "C/C++ File.compound_interest_calculator.cpp.executor": "Run",
+    "C/C++ File.concept.cpp.executor": "Run",
+    "C/C++ File.concepts-actually.cpp.executor": "Run",
+    "C/C++ File.conceptuamaybe.cpp.executor": "Run",
+    "C/C++ File.conceptuaprobably.cpp.executor": "Run",
+    "C/C++ File.datatype.cpp (1).executor": "Run",
+    "C/C++ File.datatype.cpp.executor": "Run",
+    "C/C++ File.error.cpp.executor": "Run",
+    "C/C++ File.experiment.cpp.executor": "Run",
+    "C/C++ File.grade_checker.cpp.executor": "Run",
+    "C/C++ File.isDouble.cpp (1).executor": "Run",
+    "C/C++ File.isDouble.cpp.executor": "Run",
+    "C/C++ File.lambda.cpp.executor": "Run",
+    "C/C++ File.namespaces.cpp.executor": "Run",
+    "C/C++ File.pokedex.cpp.executor": "Run",
+    "C/C++ File.ptr.cpp.executor": "Run",
+    "C/C++ File.pythonmeme.cpp.executor": "Run",
+    "C/C++ File.simple_interest_calculator.cpp.executor": "Run",
+    "C/C++ File.stdconcepts.cpp.executor": "Run",
+    "C/C++ File.stopwatchByLambda.cpp (1).executor": "Run",
+    "C/C++ File.stopwatchByLambda.cpp.executor": "Run",
+    "C/C++ File.template.cpp.executor": "Run",
+    "C/C++ File.uniqueptr.cpp.executor": "Run",
+    "C/C++ File.unit_converter.cpp.executor": "Run",
+    "C/C++ File.vector.cpp.executor": "Run",
+    "C/C++ File.vector_2x.cpp.executor": "Run",
+    "C/C++ File.vector_sort.cpp.executor": "Run",
+    "CMake Application.ptr_pokedex.executor": "Run",
+    "CMake Application.ptr_shared_ptr.executor": "Run",
+    "CidrDebugProfileConversion": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/bened/c-plus-plus/compiled-projects/fp_checker",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CPPToolchains",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
-  <component name="RunManager" selected="C/C++ File.uniqueptr.cpp">
+}]]></component>
+  <component name="RunManager" selected="CMake Application.ptr_pokedex">
     <configuration default="true" type="CMakeBoostTestRunConfigurationType" factoryName="Boost Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="BeforeTestRunTask" enabled="true" />
@@ -235,132 +269,157 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="chrono_timer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="chrono_timer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="chrono_timer">
+    <configuration name="chrono_timer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="chrono_timer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="chrono_timer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cmake-build-debug_CMakeFiles_4.3.1_CompilerIdCXX_CMakeCXXCompilerId" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="cmake-build-debug_CMakeFiles_4.3.1_CompilerIdCXX_CMakeCXXCompilerId" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="cmake-build-debug_CMakeFiles_4.3.1_CompilerIdCXX_CMakeCXXCompilerId">
+    <configuration name="cmake-build-debug_CMakeFiles_4.3.1_CompilerIdCXX_CMakeCXXCompilerId" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="cmake-build-debug_CMakeFiles_4.3.1_CompilerIdCXX_CMakeCXXCompilerId" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="cmake-build-debug_CMakeFiles_4.3.1_CompilerIdCXX_CMakeCXXCompilerId">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lambda_lambda" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="lambda_lambda" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="lambda_lambda">
+    <configuration name="compound_interest_calculator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="compound_interest_calculator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="compound_interest_calculator">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lambda_vector_2x" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="lambda_vector_2x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="lambda_vector_2x">
+    <configuration name="fp_checker" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="fp_checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="fp_checker">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="meme_error" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="meme_error" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="meme_error">
+    <configuration name="lambda_lambda" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="lambda_lambda" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="lambda_lambda">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="meme_experiment" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="meme_experiment" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="meme_experiment">
+    <configuration name="lambda_vector_2x" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="lambda_vector_2x" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="lambda_vector_2x">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="meme_pythonmeme" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="meme_pythonmeme" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="meme_pythonmeme">
+    <configuration name="meme_error" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="meme_error" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="meme_error">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="namespaces_namespaces" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="namespaces_namespaces" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="namespaces_namespaces">
+    <configuration name="meme_experiment" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="meme_experiment" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="meme_experiment">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="namespaces_unit_converter" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="namespaces_unit_converter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="namespaces_unit_converter">
+    <configuration name="meme_pythonmeme" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="meme_pythonmeme" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="meme_pythonmeme">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ptr_ptr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="ptr_ptr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="ptr_ptr">
+    <configuration name="namespaces_namespaces" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="namespaces_namespaces" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="namespaces_namespaces">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ptr_shared_ptr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="ptr_shared_ptr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="ptr_shared_ptr">
+    <configuration name="namespaces_unit_converter" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="namespaces_unit_converter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="namespaces_unit_converter">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ptr_uniqueptr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="ptr_uniqueptr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="ptr_uniqueptr">
+    <configuration name="ptr_pokedex" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="ptr_pokedex" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="ptr_pokedex">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="static_polymorphism_concept" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="static_polymorphism_concept" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="static_polymorphism_concept">
+    <configuration name="ptr_ptr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="ptr_ptr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="ptr_ptr">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="static_polymorphism_concepts-actually" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="static_polymorphism_concepts-actually" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="static_polymorphism_concepts-actually">
+    <configuration name="ptr_shared_ptr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="ptr_shared_ptr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="ptr_shared_ptr">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="static_polymorphism_conceptuamaybe" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="static_polymorphism_conceptuamaybe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="static_polymorphism_conceptuamaybe">
+    <configuration name="ptr_uniqueptr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="ptr_uniqueptr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="ptr_uniqueptr">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="static_polymorphism_conceptuaprobably" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="static_polymorphism_conceptuaprobably" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="static_polymorphism_conceptuaprobably">
+    <configuration name="simple_interest_calculator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="simple_interest_calculator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="simple_interest_calculator">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="static_polymorphism_isDouble" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="static_polymorphism_isDouble" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="static_polymorphism_isDouble">
+    <configuration name="static_polymorphism_concept" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="static_polymorphism_concept" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="static_polymorphism_concept">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="static_polymorphism_stdconcepts" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="static_polymorphism_stdconcepts" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="static_polymorphism_stdconcepts">
+    <configuration name="static_polymorphism_concepts-actually" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="static_polymorphism_concepts-actually" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="static_polymorphism_concepts-actually">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="templates_template" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="templates_template" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="templates_template">
+    <configuration name="static_polymorphism_conceptuamaybe" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="static_polymorphism_conceptuamaybe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="static_polymorphism_conceptuamaybe">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ternary_operator_grade_checker" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="ternary_operator_grade_checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="ternary_operator_grade_checker">
+    <configuration name="static_polymorphism_conceptuaprobably" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="static_polymorphism_conceptuaprobably" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="static_polymorphism_conceptuaprobably">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="variables_and_datatypes_circle_perimeter_finder" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="variables_and_datatypes_circle_perimeter_finder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="variables_and_datatypes_circle_perimeter_finder">
+    <configuration name="static_polymorphism_isDouble" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="static_polymorphism_isDouble" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="static_polymorphism_isDouble">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="variables_and_datatypes_compound_interest_calculator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="variables_and_datatypes_compound_interest_calculator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="variables_and_datatypes_compound_interest_calculator">
+    <configuration name="static_polymorphism_stdconcepts" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="static_polymorphism_stdconcepts" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="static_polymorphism_stdconcepts">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="variables_and_datatypes_name_asker" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="variables_and_datatypes_name_asker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="variables_and_datatypes_name_asker">
+    <configuration name="templates_template" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="templates_template" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="templates_template">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="variables_and_datatypes_simple_interest_calculator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="variables_and_datatypes_simple_interest_calculator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="variables_and_datatypes_simple_interest_calculator">
+    <configuration name="ternary_operator_grade_checker" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="ternary_operator_grade_checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="ternary_operator_grade_checker">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="vector_vector" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="vector_vector" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="vector_vector">
+    <configuration name="unit_converter" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="unit_converter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="unit_converter">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="vector_vector_sort" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="vector_vector_sort" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="learning_projects" RUN_TARGET_NAME="vector_vector_sort">
+    <configuration name="variables_and_datatypes_circle_perimeter_finder" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="variables_and_datatypes_circle_perimeter_finder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="variables_and_datatypes_circle_perimeter_finder">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="variables_and_datatypes_compound_interest_calculator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="variables_and_datatypes_compound_interest_calculator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="variables_and_datatypes_compound_interest_calculator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="variables_and_datatypes_name_asker" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="variables_and_datatypes_name_asker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="variables_and_datatypes_name_asker">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="variables_and_datatypes_simple_interest_calculator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="variables_and_datatypes_simple_interest_calculator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="variables_and_datatypes_simple_interest_calculator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vector_vector" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="vector_vector" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="vector_vector">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vector_vector_sort" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_plus" TARGET_NAME="vector_vector_sort" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_plus" RUN_TARGET_NAME="vector_vector_sort">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -371,8 +430,8 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="isDouble.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c-plus-plus" TARGET_NAME="isDouble.cpp" CONFIG_NAME="isDouble.cpp">
-      <option name="sourceFile" value="app-projects\fp_checker\isDouble.cpp" />
+    <configuration name="pokedex.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning_projects" TARGET_NAME="pokedex.cpp" CONFIG_NAME="pokedex.cpp">
+      <option name="sourceFile" value="learning-projects\ptr\pokedex.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -433,11 +492,15 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="C/C++ File.pokedex.cpp" />
       <item itemvalue="C/C++ File.concepts-actually.cpp" />
-      <item itemvalue="C/C++ File.isDouble.cpp (1)" />
       <item itemvalue="C/C++ File.ptr.cpp" />
       <item itemvalue="C/C++ File.uniqueptr.cpp" />
       <item itemvalue="C/C++ File.vector_2x.cpp" />
+      <item itemvalue="CMake Application.compound_interest_calculator" />
+      <item itemvalue="CMake Application.fp_checker" />
+      <item itemvalue="CMake Application.simple_interest_calculator" />
+      <item itemvalue="CMake Application.unit_converter" />
       <item itemvalue="CMake Application.chrono_timer" />
       <item itemvalue="CMake Application.cmake-build-debug_CMakeFiles_4.3.1_CompilerIdCXX_CMakeCXXCompilerId" />
       <item itemvalue="CMake Application.lambda_lambda" />
@@ -447,6 +510,7 @@
       <item itemvalue="CMake Application.meme_pythonmeme" />
       <item itemvalue="CMake Application.namespaces_namespaces" />
       <item itemvalue="CMake Application.namespaces_unit_converter" />
+      <item itemvalue="CMake Application.ptr_pokedex" />
       <item itemvalue="CMake Application.ptr_ptr" />
       <item itemvalue="CMake Application.ptr_shared_ptr" />
       <item itemvalue="CMake Application.ptr_uniqueptr" />
@@ -467,49 +531,63 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.pokedex.cpp" />
         <item itemvalue="C/C++ File.uniqueptr.cpp" />
         <item itemvalue="C/C++ File.ptr.cpp" />
         <item itemvalue="C/C++ File.concepts-actually.cpp" />
         <item itemvalue="C/C++ File.vector_2x.cpp" />
-        <item itemvalue="C/C++ File.isDouble.cpp (1)" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SelectedDebugProfileService">{
-  &quot;profileIdByStamp&quot;: [
+  <component name="SelectedDebugProfileService"><![CDATA[{
+  "profileIdByStamp": [
     {
-      &quot;first&quot;: {
-        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.vector_2x.cpp&quot;
+      "first": {
+        "##RUN_CONFIGURATION##": "C/C++ File.vector_2x.cpp"
       },
-      &quot;second&quot;: &quot;5105672b-9f5e-495b-99d3-db1bf9e39480&quot;
+      "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
     },
     {
-      &quot;first&quot;: {
-        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.uniqueptr.cpp&quot;
+      "first": {
+        "##RUN_CONFIGURATION##": "C/C++ File.uniqueptr.cpp"
       },
-      &quot;second&quot;: &quot;5105672b-9f5e-495b-99d3-db1bf9e39480&quot;
+      "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
     },
     {
-      &quot;first&quot;: {
-        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.isDouble.cpp (1)&quot;
+      "first": {
+        "##RUN_CONFIGURATION##": "C/C++ File.pokedex.cpp"
       },
-      &quot;second&quot;: &quot;5105672b-9f5e-495b-99d3-db1bf9e39480&quot;
+      "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
     },
     {
-      &quot;first&quot;: {
-        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.concepts-actually.cpp&quot;
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake Application.ptr_pokedex",
+        "cmake": "CMakeBuildProfile:Debug"
       },
-      &quot;second&quot;: &quot;5105672b-9f5e-495b-99d3-db1bf9e39480&quot;
+      "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
     },
     {
-      &quot;first&quot;: {
-        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.ptr.cpp&quot;
+      "first": {
+        "##RUN_CONFIGURATION##": "C/C++ File.concepts-actually.cpp"
       },
-      &quot;second&quot;: &quot;5105672b-9f5e-495b-99d3-db1bf9e39480&quot;
+      "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "C/C++ File.ptr.cpp"
+      },
+      "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake Application.ptr_shared_ptr",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "5105672b-9f5e-495b-99d3-db1bf9e39480"
     }
   ],
-  &quot;modificationCount&quot;: 63
-}</component>
+  "modificationCount": 70
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c2046589-d8fa-4ec7-b27e-0f7cd9a8b964" name="Changes" comment="" />
@@ -530,7 +608,6 @@
     <isAutomaticBootstrapAfterUpdate value="false" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: meme program" />
     <MESSAGE value="add: template program" />
     <MESSAGE value="add: experiment" />
     <MESSAGE value="add: concepts" />
@@ -555,7 +632,8 @@
     <MESSAGE value="add: .idea atp" />
     <MESSAGE value="add: ptr app" />
     <MESSAGE value="add: unique ptr" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: unique ptr" />
+    <MESSAGE value="add: shared ptr" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: shared ptr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
