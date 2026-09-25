@@ -49,7 +49,7 @@ int main() {
         return 1;
     }
 
-    cout << "will you be adding extra money to invest every month? (y/n)\n ";
+    cout << "will you be adding extra money to invest every month? (y/n)\n";
     str extra_money_config_question{};
     std::getline(std::cin >> std::ws, extra_money_config_question);
 
