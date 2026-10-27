@@ -36,8 +36,5 @@ foreach(SOURCE_FILE ${LEARNING_SOURCES})
     if(NOT MSVC)
         # 1. THE NATIVE WORKAROUND FLAG: Fixes the float16 bug in the MinGW <print> header
         target_compile_definitions(${EXECUTABLE_NAME} PRIVATE __STDCPP_FLOAT16_T__=1)
-
-        # 2. THE LINKER FLAG: Links the experimental standard library components
-        target_link_libraries(${EXECUTABLE_NAME} PRIVATE stdc++exp)
     endif()
 endforeach()
