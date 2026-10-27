@@ -1,6 +1,6 @@
 #include <iostream>
 #include <memory>
-#include <print> // Native C++ standard header [1]
+#include <format> // For std::format
 #include <string>
 #include <vector>
 #include <limits>
@@ -8,9 +8,14 @@
 
 using str = std::string;
 using std::vector;
-using std::println; // Pure, native std::println definition [1]
+
 using std::unique_ptr;
 using std::make_unique;
+
+template<class... Args>
+void myprintln(std::format_string<Args...> fmt, Args&&... args) {
+    std::cout << std::format(fmt, std::forward<Args>(args)...) << "\n";
+}
 
 
 class Pokedex {
@@ -47,7 +52,7 @@ int main() {
     vector<Pokedex> pokedex_db;
 
     while (true) {
-        println("\n==== welcome to the pokedex ====\n"
+        myprintln("\n==== welcome to the pokedex ====\n"
                 "a. add new pokemon entry\n"
                 "b. list elements in pokedex\n"
                 "c. delete entry\n"
@@ -59,7 +64,7 @@ int main() {
         }
 
         if (choice == 'a') {
-            println("Enter the National Pokedex Number:");
+            myprintln("Enter the National Pokedex Number:");
             int national_pokedex_number{};
             if (!(std::cin >> national_pokedex_number)) {
                 std::cerr << "error: not an integer\n";
@@ -68,20 +73,19 @@ int main() {
                 continue;
             }
 
-            println("Enter the Pokemon name:");
+            myprintln("Enter the Pokemon name:");
             str pokemon_name{};
             std::getline(std::cin >> std::ws, pokemon_name);
 
-            println("Enter the category classification:");
+            myprintln("Enter the category classification:");
             str category_classification{};
             std::getline(std::cin >> std::ws, category_classification);
 
-            println("Enter the type:");
+            myprintln("Enter the type:");
             str type1{};
             std::getline(std::cin >> std::ws, type1);
 
-            println("Enter the second type\n"
-                    "If not available, enter 0:");
+            myprintln("Enter the second type\nIf not available, enter 0:");
             str input_type2{};
             std::getline(std::cin >> std::ws, input_type2);
 
@@ -90,7 +94,7 @@ int main() {
                 type2 = make_unique<str>(input_type2);
             }
 
-            println("Enter height (in meters):");
+            myprintln("Enter height (in meters):");
             double height{};
             if (!(std::cin >> height)) {
                 std::cerr << "error: not a valid number\n";
@@ -99,7 +103,7 @@ int main() {
                 continue;
             }
 
-            println("Enter weight (in kg):");
+            myprintln("Enter weight (in kg):");
             double weight{};
             if (!(std::cin >> weight)) {
                 std::cerr << "error: not a valid number\n";
@@ -108,7 +112,7 @@ int main() {
                 continue;
             }
 
-            println("Successfully added '{}' to the Pokedex!", pokemon_name);
+            myprintln("Successfully added '{}' to the Pokedex!", pokemon_name);
             pokedex_db.emplace_back(national_pokedex_number,
                                     std::move(pokemon_name),
                                     std::move(category_classification),
@@ -118,27 +122,27 @@ int main() {
                                     weight);
         } else if (choice == 'b') {
             if (pokedex_db.empty()) {
-                println("Pokedex is currently empty.");
+                myprintln("Pokedex is currently empty.");
             } else {
-                println("==== Pokedex Entries ({}) ====", pokedex_db.size());
+                myprintln("==== Pokedex Entries ({}) ====", pokedex_db.size());
                 for (const auto& entry : pokedex_db) {
-                    println("#{:<4} Name: {}", entry.nationalPokedexNumber, entry.pokemonName);
-                    println("      Category: {}", entry.categoryClassification);
+                    myprintln("#{:<4} Name: {}", entry.nationalPokedexNumber, entry.pokemonName);
+                    myprintln("      Category: {}", entry.categoryClassification);
                     if (entry.optionalType2) {
-                        println("      Type: {} / {}", entry.type1, *entry.optionalType2);
+                        myprintln("      Type: {} / {}", entry.type1, *entry.optionalType2);
                     } else {
-                        println("      Type: {}", entry.type1);
+                        myprintln("      Type: {}", entry.type1);
                     }
-                    println("      Height: {:.2f} m | Weight: {:.2f} kg", entry.height, entry.weight);
+                    myprintln("      Height: {:.2f} m | Weight: {:.2f} kg", entry.height, entry.weight);
                 }
             }
         } else if (choice == 'c') {
             if (pokedex_db.empty()) {
-                println("Pokedex is currently empty. Nothing to delete.");
+                myprintln("Pokedex is currently empty. Nothing to delete.");
                 continue;
             }
 
-            println("Enter National Pokedex Number to delete:");
+            myprintln("Enter National Pokedex Number to delete:");
             int target_number{};
             if (!(std::cin >> target_number)) {
                 std::cerr << "error: not an integer\n";
@@ -152,16 +156,16 @@ int main() {
             });
 
             if (it != pokedex_db.end()) {
-                println("Deleted '{}' (#{:<4}) from Pokedex.", it->pokemonName, it->nationalPokedexNumber);
+                myprintln("Deleted '{}' (#{:<4}) from Pokedex.", it->pokemonName, it->nationalPokedexNumber);
                 pokedex_db.erase(it);
             } else {
-                println("Pokemon with number {} not found.", target_number);
+                myprintln("Pokemon with number {} not found.", target_number);
             }
         } else if (choice == 'd') {
-            println("Exiting Pokedex. Goodbye!");
+            myprintln("Exiting Pokedex. Goodbye!");
             break;
         } else {
-            println("Invalid option '{}'. Please select a, b, c, or d.", choice);
+            myprintln("Invalid option '{}'. Please select a, b, c, or d.", choice);
         }
     }
 

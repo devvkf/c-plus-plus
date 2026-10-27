@@ -1,25 +1,30 @@
-#include <print>
+#include <format> // For std::format
 #include <iostream>
 #include <memory>
 
+template<class... Args>
+void println(std::format_string<Args...> fmt, Args&&... args) {
+    std::cout << std::format(fmt, std::forward<Args>(args)...) << "\n";
+}
+
 struct Resource{
     Resource(){
-        std::println("Resource Created");
+        println("Resource Created");
     }
 
     ~Resource(){
-        std::println("Resource Destroyed");
+        println("Resource Destroyed");
     }
 };
 
 int main(){
     std::shared_ptr<Resource> ptr = std::make_shared<Resource>();
-    std::println("Use count: {}", ptr.use_count());
+    println("Use count: {}", ptr.use_count());
     {
         std::shared_ptr<Resource> ptr_2 = ptr;
-        std::println("Count: {}", ptr.use_count());
+        println("Count: {}", ptr.use_count());
     }
-    std::println("Use count: {}", ptr.use_count());
-    
+    println("Use count: {}", ptr.use_count());
+
     return 0;
 }
