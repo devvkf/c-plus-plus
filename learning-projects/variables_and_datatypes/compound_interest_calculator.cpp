@@ -31,20 +31,20 @@ int main() {
     }
 
     cout << "what is the annual interest rate (in %)?\n";
-    if (!(std::cin >> annual_interest_rate_raw) || annual_interest_rate_raw < 1) {
+    if (!(std::cin >> annual_interest_rate_raw) || annual_interest_rate_raw < 0) {
         std::cerr << "invalid input, not a valid interest rate.\n";
         return 1;
     }
     annual_interest_rate_format = annual_interest_rate_raw / 100;
 
     cout << "how many times do you compound per year?\n";
-    if (!(std::cin >> compound_per_year)) {
+    if (!(std::cin >> compound_per_year) || compound_per_year <= 0) {
         std::cerr << "invalid input, not a number.\n";
         return 1;
     }
 
     cout << "how long are you investing this money? (in years)\n";
-    if (!(std::cin >> time_invested)) {
+    if (!(std::cin >> time_invested) || time_invested < 0) {
         std::cerr << "invalid input, not a number.\n";
         return 1;
     }
@@ -87,13 +87,14 @@ static str getResult(const double principal_amount, const double monthly_contrib
     double compound_factor = std::pow((1 + (annual_interest_rate_format / compound_per_year)), compound_per_year * time_invested);
     double principal_future_value = principal_amount * compound_factor;
 
-    // 2. Calculate the future value of the recurring monthly contributions
-    // We adjust the annual rate to a monthly rate denominator (r / 12)
-    double monthly_rate = annual_interest_rate_format / 12.0;
+    // Calculate the future value of monthly contributions one deposit at a time.
     double contributions_future_value = 0.0;
-
-    if (monthly_contribution > 0.0) {
-        contributions_future_value = monthly_contribution * ((compound_factor - 1.0) / monthly_rate);
+    const int months = static_cast<int>(time_invested * 12);
+    const double periodic_rate = annual_interest_rate_format / compound_per_year;
+    for (int month = 1; month <= months; ++month) {
+        const double years_remaining = time_invested - (month / 12.0);
+        contributions_future_value += monthly_contribution *
+            std::pow(1.0 + periodic_rate, compound_per_year * years_remaining);
     }
 
     // Total final balance

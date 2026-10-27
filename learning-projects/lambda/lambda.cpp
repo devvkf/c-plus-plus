@@ -8,11 +8,11 @@ int main() {
     vector<double> doubleDB = {15.2, 32.3, 98.9};
 
     std::sort(doubleDB.begin(), doubleDB.end()
-        , [](const int d, const int e) {
+        , [](const double d, const double e) {
             return d > e;
         });
 
-    for (auto& item : doubleDB) {
+    for (const auto& item : doubleDB) {
         std::cout << item << "\n";
     }
 }

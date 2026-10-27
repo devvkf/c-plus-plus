@@ -12,8 +12,10 @@ if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
     endif()
 endif()
 
-# Recursively find every .cpp file in all subdirectories of learning-projects
-add_executable(namespaces_unit_converter namespaces/unit_converter.cpp)
+# Recursively find every .cpp file in all subdirectories of learning-projects.
+file(GLOB_RECURSE LEARNING_SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp"
+)
 
 foreach(SOURCE_FILE ${LEARNING_SOURCES})
     get_filename_component(TARGET_NAME ${SOURCE_FILE} NAME_WE)

@@ -5,7 +5,6 @@
 
 using std::vector;
 using std::cout;
-auto& transform_r = std::ranges::transform;
 using ch = char;
 
 template <typename D>
@@ -20,11 +19,7 @@ template <typename D>
 concept isChar = std::same_as<D, ch>;
 
 int main() {
-    vector<double> db = {};
-    transform_r(db, db.begin(),
-                           [](const double d) {
-                               return 2 * d;
-                           });
+    vector<double> db;
 
     cout << "==== double vector ====\n"
             "a. add\n"
@@ -37,7 +32,29 @@ int main() {
         return 1;
     }
 
-    cout << input;
+    switch (input) {
+        case 'a': {
+            double value{};
+            if (!(std::cin >> value)) {
+                std::cerr << "invalid number.\n";
+                return 1;
+            }
+            db.push_back(value);
+            break;
+        }
+        case 'b':
+            for (const double value : db) {
+                cout << value * 2 << '\n';
+            }
+            break;
+        case 'c':
+            db.clear();
+            cout << "vector cleared\n";
+            break;
+        default:
+            std::cerr << "invalid choice.\n";
+            return 1;
+    }
 
     return 0;
 }

@@ -10,30 +10,17 @@ int main() {
     cout << "==== welcome to the circle perimeter finder ====\n"
             "enter radius:\n";
     double radiusInput{};
-    if (!(std::cin >> radiusInput)) {
+    if (!(std::cin >> radiusInput) || radiusInput < 0) {
         std::cerr << "invalid input, try again.\n";
-        std::cin.clear();
-        std::cin.ignore(1000, '\n');
+        return 1;
     }
 
     auto perimeterFinder = [](const double radius) {
         return 2 * std::numbers::pi * radius;
     };
 
-    cout << "getting user input...\n";
-    std::this_thread::sleep_for(20ms);
-    cout << "calculating...\n";
-    std::this_thread::sleep_for(800ms);
-    cout << "final touches...\n";
-    std::this_thread::sleep_for(300ms);
-    std::cerr << "an error ocurred while display, fixing...\n";
-    std::this_thread::sleep_for(1500ms);
-    std::cerr << "error persistence, fixing again...\n";
-    std::this_thread::sleep_for(1500ms);
-
-    for (int i = 0; i < 50; ++i) {
-        std::cerr << "dawg\n";
-    }
+    cout << "The circle perimeter is: "
+         << perimeterFinder(radiusInput) << '\n';
 
     return 0;
 }

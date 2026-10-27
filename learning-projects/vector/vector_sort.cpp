@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <cctype>
+#include <limits>
 
 using std::vector;
 using std::cout;
@@ -31,7 +32,8 @@ int main() {
                 if (!(cin >> doubleToAdd)) {
                     std::cerr << "not a valid double, try again.\n";
                     cin.clear();
-                    cin.ignore(1000, '\n');
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    break;
                 }
 
                 doubleDB.push_back(doubleToAdd);
@@ -61,7 +63,7 @@ int main() {
             default:
                 std::cerr << "an error occurred, please try again.\n";
                 cin.clear();
-                cin.ignore(1000, '\n');
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 break;
         }
     }

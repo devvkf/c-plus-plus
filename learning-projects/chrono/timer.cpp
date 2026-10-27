@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include <cctype>
 
 using std::cout;
 using ch = char;
@@ -13,19 +14,18 @@ int main() {
     ch input{};
     std::cin >> input;
 
-    input = static_cast<ch>(std::tolower(input));
+    input = static_cast<ch>(std::tolower(static_cast<unsigned char>(input)));
     if (input == 'a') {
         cout << "how many seconds to "
                 "count down to?\n";
-        if (int sec{}; !(std::cin >> sec)) {
+        if (int sec{}; !(std::cin >> sec) || sec < 0) {
             std::cerr << "invalid input\n";
             return 1;
         }
         else {
-            while (sec >= 0) {
-                std::this_thread::sleep_for
-                (1s);
+            while (sec > 0) {
                 cout << "sec: " << sec << '\n';
+                std::this_thread::sleep_for(1s);
                 --sec;
             }
             cout << "done\n";
